@@ -11,7 +11,7 @@ def get_packages():
                        'btsync-gui', 'cower', 'expac-git',
                        'firefox-extension-shumway', 'google-chrome',
                        'google-talkplugin', 'gst-plugin-libde265',
-                       'kpmcore-git', 'libde256', 'libtimezonemap',
+                       'kpmcore-git', 'libde265', 'libtimezonemap',
                        'nightingale-git', 'otter-browser', 'pacaur',
                        'package-query-git', 'palemoon-bin', 'atom-editor',
                        'pamac-aur', 'pam_encfs', 'pipelight', 'plymouth',

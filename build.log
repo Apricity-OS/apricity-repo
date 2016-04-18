@@ -1,0 +1,26 @@
+patching file src/wl/sys/wl_linux.c
+Hunk #1 succeeded at 207 (offset 2 lines).
+patching file src/wl/sys/wl_linux.c
+make: Entering directory '/usr/lib/modules/4.5.0-1-ARCH/build'
+CFG80211 API is prefered for this kernel version
+Using CFG80211 API
+  LD      /home/alex/Apricity-OS/apricity-repo/build/broadcom-wl/src/built-in.o
+  CC [M]  /home/alex/Apricity-OS/apricity-repo/build/broadcom-wl/src/src/shared/linux_osl.o
+  CC [M]  /home/alex/Apricity-OS/apricity-repo/build/broadcom-wl/src/src/wl/sys/wl_linux.o
+  CC [M]  /home/alex/Apricity-OS/apricity-repo/build/broadcom-wl/src/src/wl/sys/wl_iw.o
+  CC [M]  /home/alex/Apricity-OS/apricity-repo/build/broadcom-wl/src/src/wl/sys/wl_cfg80211_hybrid.o
+  LD [M]  /home/alex/Apricity-OS/apricity-repo/build/broadcom-wl/src/wl.o
+  Building modules, stage 2.
+CFG80211 API is prefered for this kernel version
+Using CFG80211 API
+  MODPOST 1 modules
+  CC      /home/alex/Apricity-OS/apricity-repo/build/broadcom-wl/src/wl.mod.o
+  LD [M]  /home/alex/Apricity-OS/apricity-repo/build/broadcom-wl/src/wl.ko
+make: Leaving directory '/usr/lib/modules/4.5.0-1-ARCH/build'
+patching file src/wl/sys/wl_linux.c
+Hunk #1 succeeded at 2165 (offset 8 lines).
+patching file src/shared/linux_osl.c
+cc -std=c11 -g -pedantic -Wall -Wextra -Wno-missing-field-initializers -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -DVERSION=\"6-1-ga410da8\" -D_GNU_SOURCE -D_FORTIFY_SOURCE=2 -Wl,-O1,--sort-common,--as-needed,-z,relro  expac.c conf.c conf.h util.h  -lalpm -o expac
+pod2man --section=1 --center="expac manual" --name="EXPAC" --release="expac 6-1-ga410da8" README.pod expac.1
+install -Dm755 expac /home/alex/Apricity-OS/apricity-repo/build/expac-git/pkg/expac-git/usr/bin/expac
+install -Dm644 expac.1 /home/alex/Apricity-OS/apricity-repo/build/expac-git/pkg/expac-git/usr/share/man/man1/expac.1
