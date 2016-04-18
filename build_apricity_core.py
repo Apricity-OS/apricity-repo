@@ -50,8 +50,11 @@ def build_core(packages):
     mkdir('repo')
     for package in packages:
         package.build('build')
-        for file in glob('build/' + package.pkg + '/' '*.pkg.tar.xz'):
-            copy(file, 'repo')
+        pkgs = glob('build/' + package.pkg + '/' '*.pkg.tar.xz')
+        if len(pkgs) > 0:
+            for file in pkgs:
+                copy(file, 'repo')
+        else raise Exception('Makepkg failed')
     with cd('repo'):
         call('repo-add apricity-core.db.tar.gz *.pkg.tar.xz', shell=True)
 

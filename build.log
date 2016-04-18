@@ -24,3 +24,1567 @@ cc -std=c11 -g -pedantic -Wall -Wextra -Wno-missing-field-initializers -march=x8
 pod2man --section=1 --center="expac manual" --name="EXPAC" --release="expac 6-1-ga410da8" README.pod expac.1
 install -Dm755 expac /home/alex/Apricity-OS/apricity-repo/build/expac-git/pkg/expac-git/usr/bin/expac
 install -Dm644 expac.1 /home/alex/Apricity-OS/apricity-repo/build/expac-git/pkg/expac-git/usr/share/man/man1/expac.1
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: Consider adding 'AC_CONFIG_MACRO_DIRS([m4])' to configure.ac,
+libtoolize: and rerunning libtoolize and aclocal.
+libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for int8_t... yes
+checking for int16_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for inline... inline
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for library containing floor... -lm
+checking for gettimeofday... yes
+checking for pkg-config...  
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for GST... yes
+checking for GST_PLUGIN... yes
+checking for GStreamer version... 1.4.0
+checking for libde265... yes
+checking to see if compiler understands -Wall... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating common/Makefile
+config.status: creating common/m4/Makefile
+config.status: creating src/Makefile
+config.status: creating examples/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12'
+Making all in common
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/common'
+Making all in m4
+make[3]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/common/m4'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/common/m4'
+make[3]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/common'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/common'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/common'
+Making all in src
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/src'
+/bin/sh ../libtool  --tag=CC --tag=disable-static  --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2 -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -Wall -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -MT libgstlibde265_la-gstlibde265.lo -MD -MP -MF .deps/libgstlibde265_la-gstlibde265.Tpo -c -o libgstlibde265_la-gstlibde265.lo `test -f 'gstlibde265.c' || echo './'`gstlibde265.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -Wall -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -MT libgstlibde265_la-gstlibde265.lo -MD -MP -MF .deps/libgstlibde265_la-gstlibde265.Tpo -c gstlibde265.c  -fPIC -DPIC -o .libs/libgstlibde265_la-gstlibde265.o
+mv -f .deps/libgstlibde265_la-gstlibde265.Tpo .deps/libgstlibde265_la-gstlibde265.Plo
+/bin/sh ../libtool  --tag=CC --tag=disable-static  --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2 -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -Wall -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -MT libgstlibde265_la-libde265-dec.lo -MD -MP -MF .deps/libgstlibde265_la-libde265-dec.Tpo -c -o libgstlibde265_la-libde265-dec.lo `test -f 'libde265-dec.c' || echo './'`libde265-dec.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -Wall -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -MT libgstlibde265_la-libde265-dec.lo -MD -MP -MF .deps/libgstlibde265_la-libde265-dec.Tpo -c libde265-dec.c  -fPIC -DPIC -o .libs/libgstlibde265_la-libde265-dec.o
+mv -f .deps/libgstlibde265_la-libde265-dec.Tpo .deps/libgstlibde265_la-libde265-dec.Plo
+/bin/sh ../libtool  --tag=CC --tag=disable-static  --mode=compile gcc -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2 -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -Wall -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -MT libgstlibde265_la-codec-utils.lo -MD -MP -MF .deps/libgstlibde265_la-codec-utils.Tpo -c -o libgstlibde265_la-codec-utils.lo `test -f 'common/codec-utils.c' || echo './'`common/codec-utils.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -Wall -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -MT libgstlibde265_la-codec-utils.lo -MD -MP -MF .deps/libgstlibde265_la-codec-utils.Tpo -c common/codec-utils.c  -fPIC -DPIC -o .libs/libgstlibde265_la-codec-utils.o
+mv -f .deps/libgstlibde265_la-codec-utils.Tpo .deps/libgstlibde265_la-codec-utils.Plo
+/bin/sh ../libtool  --tag=CC --tag=disable-static  --mode=link gcc -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -Wall -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong  -module -avoid-version -export-symbols-regex _*\(gst_\|Gst\|GST_\).* -Wl,-O1,--sort-common,--as-needed,-z,relro -o libgstlibde265.la -rpath /usr/lib/gstreamer-1.0 libgstlibde265_la-gstlibde265.lo libgstlibde265_la-libde265-dec.lo libgstlibde265_la-codec-utils.lo   -lgstvideo-1.0 -lgstbase-1.0 -lgstpbutils-1.0 -lgstriff-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 -lde265  -lm 
+libtool: link: /usr/bin/nm -B  .libs/libgstlibde265_la-gstlibde265.o .libs/libgstlibde265_la-libde265-dec.o .libs/libgstlibde265_la-codec-utils.o   | sed -n -e 's/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' | /usr/bin/sed 's/.* //' | sort | uniq > .libs/libgstlibde265.exp
+libtool: link: /usr/bin/grep -E -e "_*(gst_|Gst|GST_).*" ".libs/libgstlibde265.exp" > ".libs/libgstlibde265.expT"
+libtool: link: mv -f ".libs/libgstlibde265.expT" ".libs/libgstlibde265.exp"
+libtool: link: echo "{ global:" > .libs/libgstlibde265.ver
+libtool: link:  cat .libs/libgstlibde265.exp | sed -e "s/\(.*\)/\1;/" >> .libs/libgstlibde265.ver
+libtool: link:  echo "local: *; };" >> .libs/libgstlibde265.ver
+libtool: link:  gcc -shared  -fPIC -DPIC  .libs/libgstlibde265_la-gstlibde265.o .libs/libgstlibde265_la-libde265-dec.o .libs/libgstlibde265_la-codec-utils.o   -lgstvideo-1.0 -lgstbase-1.0 -lgstpbutils-1.0 -lgstriff-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 -lde265 -lm  -pthread -pthread -march=x86-64 -mtune=generic -O2 -fstack-protector-strong -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro   -pthread -Wl,-soname -Wl,libgstlibde265.so -Wl,-version-script -Wl,.libs/libgstlibde265.ver -o .libs/libgstlibde265.so
+libtool: link: ( cd ".libs" && rm -f "libgstlibde265.la" && ln -s "../libgstlibde265.la" "libgstlibde265.la" )
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/src'
+Making all in examples
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/examples'
+gcc -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2 -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -Wall -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -MT playhevc-playhevc.o -MD -MP -MF .deps/playhevc-playhevc.Tpo -c -o playhevc-playhevc.o `test -f 'playhevc.c' || echo './'`playhevc.c
+mv -f .deps/playhevc-playhevc.Tpo .deps/playhevc-playhevc.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -Wall -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong  -lgstvideo-1.0 -lgstbase-1.0 -lgstpbutils-1.0 -lgstriff-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 -Wl,-O1,--sort-common,--as-needed,-z,relro -o playhevc playhevc-playhevc.o  -lm 
+libtool: link: gcc -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -Wall -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -o playhevc playhevc-playhevc.o  -lgstvideo-1.0 -lgstbase-1.0 -lgstpbutils-1.0 -lgstriff-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 -lm -pthread
+gcc -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2 -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -Wall -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -MT timehevc-timehevc.o -MD -MP -MF .deps/timehevc-timehevc.Tpo -c -o timehevc-timehevc.o `test -f 'timehevc.c' || echo './'`timehevc.c
+mv -f .deps/timehevc-timehevc.Tpo .deps/timehevc-timehevc.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -Wall -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong  -lgstvideo-1.0 -lgstbase-1.0 -lgstpbutils-1.0 -lgstriff-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 -Wl,-O1,--sort-common,--as-needed,-z,relro -o timehevc timehevc-timehevc.o  -lm 
+libtool: link: gcc -pthread -I/usr/include/gstreamer-1.0 -I/usr/lib/gstreamer-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -Wall -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -o timehevc timehevc-timehevc.o  -lgstvideo-1.0 -lgstbase-1.0 -lgstpbutils-1.0 -lgstriff-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 -lm -pthread
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/examples'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12'
+Making install in common
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/common'
+Making install in m4
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/common/m4'
+make[3]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/common/m4'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/common/m4'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/common/m4'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/common'
+make[3]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/common'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/common'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/common'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/common'
+Making install in src
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/src'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/src'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/pkg/gst-plugin-libde265/usr/lib/gstreamer-1.0'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libgstlibde265.la '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/pkg/gst-plugin-libde265/usr/lib/gstreamer-1.0'
+libtool: install: /usr/bin/install -c .libs/libgstlibde265.so /home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/pkg/gst-plugin-libde265/usr/lib/gstreamer-1.0/libgstlibde265.so
+libtool: install: /usr/bin/install -c .libs/libgstlibde265.lai /home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/pkg/gst-plugin-libde265/usr/lib/gstreamer-1.0/libgstlibde265.la
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/src'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/src'
+Making install in examples
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/examples'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/examples'
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/pkg/gst-plugin-libde265/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c playhevc timehevc '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/pkg/gst-plugin-libde265/usr/bin'
+libtool: install: /usr/bin/install -c playhevc /home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/pkg/gst-plugin-libde265/usr/bin/playhevc
+libtool: install: /usr/bin/install -c timehevc /home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/pkg/gst-plugin-libde265/usr/bin/timehevc
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/examples'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12/examples'
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/gst-plugin-libde265/src/gstreamer-libde265-0.1.12'
+-- The C compiler identification is GNU 5.3.0
+-- The CXX compiler identification is GNU 5.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Found Gettext: /usr/bin/msgmerge (found version "0.19.7") 
+-- Found PythonInterp: /usr/bin/python (found version "3.5.1") 
+-- Found KF5I18n: /usr/lib64/cmake/KF5I18n/KF5I18nConfig.cmake (found version "5.21.0") 
+-- Found KF5IconThemes: /usr/lib64/cmake/KF5IconThemes/KF5IconThemesConfig.cmake (found version "5.21.0") 
+-- Found KF5KIO: /usr/lib64/cmake/KF5KIO/KF5KIOConfig.cmake (found version "5.21.0") 
+-- Found KF5Service: /usr/lib64/cmake/KF5Service/KF5ServiceConfig.cmake (found version "5.21.0") 
+-- Found KF5: success (found version "5.21.0") found components:  I18n IconThemes KIO Service 
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+-- Checking for module 'blkid>=2.23'
+--   Found blkid, version 2.27.0
+-- Checking for module 'libatasmart'
+--   Found libatasmart, version 0.19
+-- Found LIBPARTED: /usr/lib64/libparted.so  
+-- Looking for ped_file_system_clobber
+-- Looking for ped_file_system_clobber - not found
+-- Looking for ped_file_system_resize
+-- Looking for ped_file_system_resize - found
+-- kpmcore 2.1.1 will be built for install into /usr
+-- 
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 1.0.0)
+ * Qt5Core
+ * Qt5Gui
+ * Qt5Widgets
+ * Qt5 (required version >= 5.3.0)
+ * Gettext
+ * PythonInterp
+ * KF5I18n
+ * KF5IconThemes
+ * KF5KIO
+ * KF5Service
+ * KF5
+ * PkgConfig
+ * LIBPARTED
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build
+Scanning dependencies of target kpmcore_automoc
+[  1%] Automatic moc for target kpmcore
+Generating moc_corebackend.cpp
+Generating moc_device.cpp
+Generating moc_devicescanner.cpp
+Generating moc_operationrunner.cpp
+Generating moc_operationstack.cpp
+Generating moc_partitionnode.cpp
+Generating moc_decryptluksdialog.cpp
+Generating moc_decryptluksdialogwidget.cpp
+Generating moc_partresizerwidget.cpp
+Generating moc_partwidget.cpp
+Generating moc_partwidgetbase.cpp
+Generating moc_job.cpp
+Generating moc_backupoperation.cpp
+Generating moc_checkoperation.cpp
+Generating moc_copyoperation.cpp
+Generating moc_createfilesystemoperation.cpp
+Generating moc_createpartitiontableoperation.cpp
+Generating moc_deleteoperation.cpp
+Generating moc_newoperation.cpp
+Generating moc_operation.cpp
+Generating moc_resizeoperation.cpp
+Generating moc_restoreoperation.cpp
+Generating moc_setfilesystemlabeloperation.cpp
+Generating moc_setpartflagsoperation.cpp
+Generating moc_externalcommand.cpp
+Generating moc_globallog.cpp
+Generating moc_report.cpp
+[  1%] Built target kpmcore_automoc
+[  1%] Generating ui_decryptluksdialogwidgetbase.h
+Scanning dependencies of target kpmcore
+[  2%] Building CXX object src/CMakeFiles/kpmcore.dir/backend/corebackendmanager.cpp.o
+[  3%] Building CXX object src/CMakeFiles/kpmcore.dir/backend/corebackenddevice.cpp.o
+[  4%] Building CXX object src/CMakeFiles/kpmcore.dir/backend/corebackend.cpp.o
+[  5%] Building CXX object src/CMakeFiles/kpmcore.dir/backend/corebackendpartition.cpp.o
+[  6%] Building CXX object src/CMakeFiles/kpmcore.dir/backend/corebackendpartitiontable.cpp.o
+[  7%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/btrfs.cpp.o
+[  8%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/exfat.cpp.o
+[  9%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ext2.cpp.o
+[ 10%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ext3.cpp.o
+[ 10%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ext4.cpp.o
+[ 11%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/extended.cpp.o
+[ 12%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/f2fs.cpp.o
+[ 13%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/fat16.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/fat32.cpp.o
+[ 15%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/filesystem.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/filesystemfactory.cpp.o
+[ 17%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/hfs.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/hfsplus.cpp.o
+[ 19%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/hpfs.cpp.o
+[ 19%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/jfs.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/linuxswap.cpp.o
+[ 21%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/luks.cpp.o
+[ 22%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/lvm2_pv.cpp.o
+[ 23%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/nilfs2.cpp.o
+[ 24%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ntfs.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ocfs2.cpp.o
+[ 26%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/reiser4.cpp.o
+[ 27%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/reiserfs.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ufs.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/unformatted.cpp.o
+[ 29%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/unknown.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/xfs.cpp.o
+[ 31%] Building CXX object src/CMakeFiles/kpmcore.dir/fs/zfs.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/kpmcore.dir/core/copysourceshred.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/kpmcore.dir/core/copysource.cpp.o
+[ 34%] Building CXX object src/CMakeFiles/kpmcore.dir/core/partition.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/kpmcore.dir/core/mountentry.cpp.o
+[ 36%] Building CXX object src/CMakeFiles/kpmcore.dir/core/copytargetdevice.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/kpmcore.dir/core/copytarget.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/kpmcore.dir/core/copysourcedevice.cpp.o
+[ 38%] Building CXX object src/CMakeFiles/kpmcore.dir/core/operationrunner.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/kpmcore.dir/core/partitiontable.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/kpmcore.dir/core/copytargetfile.cpp.o
+[ 41%] Building CXX object src/CMakeFiles/kpmcore.dir/core/smartstatus.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/kpmcore.dir/core/copysourcefile.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/kpmcore.dir/core/smartattribute.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/kpmcore.dir/core/devicescanner.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/kpmcore.dir/core/partitionnode.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/kpmcore.dir/core/partitionalignment.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/kpmcore.dir/core/device.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/kpmcore.dir/core/operationstack.cpp.o
+[ 48%] Building CXX object src/CMakeFiles/kpmcore.dir/core/partitionrole.cpp.o
+[ 49%] Building CXX object src/CMakeFiles/kpmcore.dir/ops/operation.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/kpmcore.dir/ops/deleteoperation.cpp.o
+[ 51%] Building CXX object src/CMakeFiles/kpmcore.dir/ops/restoreoperation.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/kpmcore.dir/ops/resizeoperation.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/kpmcore.dir/ops/newoperation.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/kpmcore.dir/ops/createfilesystemoperation.cpp.o
+[ 55%] Building CXX object src/CMakeFiles/kpmcore.dir/ops/createpartitiontableoperation.cpp.o
+[ 55%] Building CXX object src/CMakeFiles/kpmcore.dir/ops/setfilesystemlabeloperation.cpp.o
+[ 56%] Building CXX object src/CMakeFiles/kpmcore.dir/ops/setpartflagsoperation.cpp.o
+[ 57%] Building CXX object src/CMakeFiles/kpmcore.dir/ops/checkoperation.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/kpmcore.dir/ops/backupoperation.cpp.o
+[ 59%] Building CXX object src/CMakeFiles/kpmcore.dir/ops/copyoperation.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/resizefilesystemjob.cpp.o
+[ 61%] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/createfilesystemjob.cpp.o
+[ 62%] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/job.cpp.o
+[ 63%] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/checkfilesystemjob.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/shredfilesystemjob.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/createpartitionjob.cpp.o
+[ 65%] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/createpartitiontablejob.cpp.o
+[ 66%] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/setfilesystemlabeljob.cpp.o
+[ 67%] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/deletepartitionjob.cpp.o
+[ 68%] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/restorefilesystemjob.cpp.o
+[ 69%] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/setpartgeometryjob.cpp.o
+[ 70%] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/deletefilesystemjob.cpp.o
+[ 71%] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/backupfilesystemjob.cpp.o
+[ 72%] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/setpartflagsjob.cpp.o
+[ 73%] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/copyfilesystemjob.cpp.o
+[ 73%] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/movefilesystemjob.cpp.o
+[ 74%] Building CXX object src/CMakeFiles/kpmcore.dir/util/capacity.cpp.o
+[ 75%] Building CXX object src/CMakeFiles/kpmcore.dir/util/externalcommand.cpp.o
+[ 76%] Building CXX object src/CMakeFiles/kpmcore.dir/util/globallog.cpp.o
+[ 77%] Building CXX object src/CMakeFiles/kpmcore.dir/util/helpers.cpp.o
+[ 78%] Building CXX object src/CMakeFiles/kpmcore.dir/util/htmlreport.cpp.o
+[ 79%] Building CXX object src/CMakeFiles/kpmcore.dir/util/report.cpp.o
+[ 80%] Building CXX object src/CMakeFiles/kpmcore.dir/gui/decryptluksdialog.cpp.o
+[ 81%] Building CXX object src/CMakeFiles/kpmcore.dir/gui/decryptluksdialogwidget.cpp.o
+[ 82%] Building CXX object src/CMakeFiles/kpmcore.dir/gui/partresizerwidget.cpp.o
+[ 82%] Building CXX object src/CMakeFiles/kpmcore.dir/gui/partwidget.cpp.o
+[ 83%] Building CXX object src/CMakeFiles/kpmcore.dir/gui/partwidgetbase.cpp.o
+[ 84%] Building CXX object src/CMakeFiles/kpmcore.dir/kpmcore_automoc.cpp.o
+[ 85%] Linking CXX shared library libkpmcore.so
+[ 85%] Built target kpmcore
+Scanning dependencies of target pmlibpartedbackendplugin_automoc
+[ 86%] Generating pmlibpartedbackendplugin.json
+Generated  "/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build/src/plugins/libparted/pmlibpartedbackendplugin.json" 
+
+[ 87%] Automatic moc for target pmlibpartedbackendplugin
+Generating libpartedbackend.moc
+[ 87%] Built target pmlibpartedbackendplugin_automoc
+Scanning dependencies of target pmlibpartedbackendplugin
+[ 88%] Building CXX object src/plugins/libparted/CMakeFiles/pmlibpartedbackendplugin.dir/libpartedpartitiontable.cpp.o
+[ 89%] Building CXX object src/plugins/libparted/CMakeFiles/pmlibpartedbackendplugin.dir/libpartedbackend.cpp.o
+[ 90%] Building CXX object src/plugins/libparted/CMakeFiles/pmlibpartedbackendplugin.dir/libpartedpartition.cpp.o
+[ 91%] Building CXX object src/plugins/libparted/CMakeFiles/pmlibpartedbackendplugin.dir/libparteddevice.cpp.o
+[ 92%] Building CXX object src/plugins/libparted/CMakeFiles/pmlibpartedbackendplugin.dir/pmlibpartedbackendplugin_automoc.cpp.o
+[ 93%] Linking CXX shared library libpmlibpartedbackendplugin.so
+[ 93%] Built target pmlibpartedbackendplugin
+Scanning dependencies of target pmdummybackendplugin_automoc
+[ 94%] Generating pmdummybackendplugin.json
+Generated  "/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build/src/plugins/dummy/pmdummybackendplugin.json" 
+
+[ 95%] Automatic moc for target pmdummybackendplugin
+Generating dummybackend.moc
+[ 95%] Built target pmdummybackendplugin_automoc
+Scanning dependencies of target pmdummybackendplugin
+[ 96%] Building CXX object src/plugins/dummy/CMakeFiles/pmdummybackendplugin.dir/dummypartition.cpp.o
+[ 97%] Building CXX object src/plugins/dummy/CMakeFiles/pmdummybackendplugin.dir/dummypartitiontable.cpp.o
+[ 98%] Building CXX object src/plugins/dummy/CMakeFiles/pmdummybackendplugin.dir/dummydevice.cpp.o
+[ 99%] Building CXX object src/plugins/dummy/CMakeFiles/pmdummybackendplugin.dir/dummybackend.cpp.o
+[100%] Building CXX object src/plugins/dummy/CMakeFiles/pmdummybackendplugin.dir/pmdummybackendplugin_automoc.cpp.o
+[100%] Linking CXX shared library libpmdummybackendplugin.so
+[100%] Built target pmdummybackendplugin
+make: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+[  1%] Automatic moc for target kpmcore
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+[  1%] Built target kpmcore_automoc
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+[ 85%] Built target kpmcore
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+[ 86%] Automatic moc for target pmlibpartedbackendplugin
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+[ 87%] Built target pmlibpartedbackendplugin_automoc
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+[ 93%] Built target pmlibpartedbackendplugin
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+[ 94%] Automatic moc for target pmdummybackendplugin
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+[ 95%] Built target pmdummybackendplugin_automoc
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+[100%] Built target pmdummybackendplugin
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/lib/cmake/KPMcore/KPMcoreConfig.cmake
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/lib/cmake/KPMcore/KPMcoreConfigVersion.cmake
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/lib/cmake/KPMcore/KPMcoreTargets.cmake
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/lib/cmake/KPMcore/KPMcoreTargets-release.cmake
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/lib/libkpmcore.so.2.1.1
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/lib/libkpmcore.so.2
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/lib/libkpmcore.so
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/core/copysource.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/core/copysourcedevice.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/core/copytarget.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/core/copytargetdevice.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/core/device.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/core/devicescanner.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/core/mountentry.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/core/operationrunner.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/core/operationstack.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/core/partition.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/core/partitionalignment.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/core/partitionnode.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/core/partitionrole.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/core/partitiontable.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/core/smartattribute.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/core/smartstatus.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/backend/corebackend.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/backend/corebackenddevice.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/backend/corebackendmanager.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/backend/corebackendpartition.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/backend/corebackendpartitiontable.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/btrfs.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/exfat.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/ext2.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/ext3.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/ext4.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/extended.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/f2fs.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/fat16.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/fat32.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/filesystem.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/filesystemfactory.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/hfs.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/hfsplus.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/hpfs.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/jfs.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/linuxswap.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/luks.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/lvm2_pv.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/nilfs2.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/ntfs.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/ocfs2.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/reiser4.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/reiserfs.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/ufs.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/unformatted.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/unknown.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/xfs.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/fs/zfs.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/jobs/job.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/ops/backupoperation.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/ops/checkoperation.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/ops/copyoperation.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/ops/createfilesystemoperation.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/ops/createpartitiontableoperation.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/ops/deleteoperation.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/ops/newoperation.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/ops/operation.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/ops/resizeoperation.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/ops/restoreoperation.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/ops/setfilesystemlabeloperation.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/ops/setpartflagsoperation.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/util/libpartitionmanagerexport.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/util/capacity.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/util/externalcommand.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/util/globallog.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/util/helpers.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/util/htmlreport.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/util/report.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/gui/decryptluksdialog.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/gui/decryptluksdialogwidget.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/gui/partresizerwidget.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/gui/partwidget.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/include/kpmcore/gui/partwidgetbase.h
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/share/kservicetypes5/pmcorebackendplugin.desktop
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/lib/qt/plugins/libpmlibpartedbackendplugin.so
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/share/kservices5/pmlibpartedbackendplugin.desktop
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/lib/qt/plugins/libpmdummybackendplugin.so
+-- Installing: /home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/pkg/kpmcore-git/usr/share/kservices5/pmdummybackendplugin.desktop
+make: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/kpmcore-git/src/build'
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking for gawk... gawk
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking for grep that handles long lines and -e... (cached) /usr/bin/grep
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking dependency style of gcc... gcc3
+checking dependency style of g++... gcc3
+checking whether g++ supports C++11 features by default... no
+checking whether g++ supports C++11 features with -std=gnu++11... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking setjmp.h usability... yes
+checking setjmp.h presence... yes
+checking for setjmp.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for size_t... yes
+checking for int8_t... yes
+checking for int16_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for ptrdiff_t... yes
+checking for inline... inline
+checking for malloc... yes
+checking for memmove... yes
+checking for memset... yes
+checking for __malloc_hook... yes
+checking for memalign... yes
+checking for posix_memalign... yes
+checking for __mingw_aligned_malloc... no
+checking for __mingw_aligned_free... no
+checking for library containing pow... -lm
+checking for library containing sqrt... none required
+checking for library containing pthread_create... -lpthread
+checking for gettimeofday... yes
+checking for pow... yes
+checking for sqrt... yes
+checking for strchr... yes
+checking for strrchr... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for error_at_line... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for sys/time.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for alarm... yes
+checking for working mktime... yes
+checking if __STRICT_ANSI__ is required... no
+checking whether C compiler accepts -msse4.1... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for VIDEOGFX... no
+checking for SDL... yes
+checking for SWSCALE... yes
+checking for QT... yes
+checking for qtchooser... /usr/bin/qtchooser
+checking for version of /usr/bin/qtchooser -run-tool=moc -qt=5... 5.6.0
+configure: ---------------------------------------
+configure: Building dec265 example: yes
+configure: Building sherlock265 example: yes
+configure: ---------------------------------------
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libde265/Makefile
+config.status: creating libde265/arm/Makefile
+config.status: creating libde265/x86/Makefile
+config.status: creating libde265/encoder/Makefile
+config.status: creating libde265/encoder/algo/Makefile
+config.status: creating libde265/de265-version.h
+config.status: creating dec265/Makefile
+config.status: creating enc265/Makefile
+config.status: creating sherlock265/Makefile
+config.status: creating tools/Makefile
+config.status: creating libde265.pc
+config.status: creating config.h
+config.status: executing libtool commands
+config.status: executing depfiles commands
+make  all-recursive
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2'
+Making all in libde265
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265'
+Making all in encoder
+make[3]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder'
+Making all in algo
+make[4]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder/algo'
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../../..   -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-algo.lo -MD -MP -MF .deps/libde265_encoder_algo_la-algo.Tpo -c -o libde265_encoder_algo_la-algo.lo `test -f 'algo.cc' || echo './'`algo.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-algo.lo -MD -MP -MF .deps/libde265_encoder_algo_la-algo.Tpo -c algo.cc  -fPIC -DPIC -o .libs/libde265_encoder_algo_la-algo.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-algo.lo -MD -MP -MF .deps/libde265_encoder_algo_la-algo.Tpo -c algo.cc -o libde265_encoder_algo_la-algo.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_algo_la-algo.Tpo .deps/libde265_encoder_algo_la-algo.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../../..   -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-coding-options.lo -MD -MP -MF .deps/libde265_encoder_algo_la-coding-options.Tpo -c -o libde265_encoder_algo_la-coding-options.lo `test -f 'coding-options.cc' || echo './'`coding-options.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-coding-options.lo -MD -MP -MF .deps/libde265_encoder_algo_la-coding-options.Tpo -c coding-options.cc  -fPIC -DPIC -o .libs/libde265_encoder_algo_la-coding-options.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-coding-options.lo -MD -MP -MF .deps/libde265_encoder_algo_la-coding-options.Tpo -c coding-options.cc -o libde265_encoder_algo_la-coding-options.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_algo_la-coding-options.Tpo .deps/libde265_encoder_algo_la-coding-options.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../../..   -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-ctb-qscale.lo -MD -MP -MF .deps/libde265_encoder_algo_la-ctb-qscale.Tpo -c -o libde265_encoder_algo_la-ctb-qscale.lo `test -f 'ctb-qscale.cc' || echo './'`ctb-qscale.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-ctb-qscale.lo -MD -MP -MF .deps/libde265_encoder_algo_la-ctb-qscale.Tpo -c ctb-qscale.cc  -fPIC -DPIC -o .libs/libde265_encoder_algo_la-ctb-qscale.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-ctb-qscale.lo -MD -MP -MF .deps/libde265_encoder_algo_la-ctb-qscale.Tpo -c ctb-qscale.cc -o libde265_encoder_algo_la-ctb-qscale.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_algo_la-ctb-qscale.Tpo .deps/libde265_encoder_algo_la-ctb-qscale.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../../..   -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-split.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-split.Tpo -c -o libde265_encoder_algo_la-cb-split.lo `test -f 'cb-split.cc' || echo './'`cb-split.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-split.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-split.Tpo -c cb-split.cc  -fPIC -DPIC -o .libs/libde265_encoder_algo_la-cb-split.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-split.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-split.Tpo -c cb-split.cc -o libde265_encoder_algo_la-cb-split.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_algo_la-cb-split.Tpo .deps/libde265_encoder_algo_la-cb-split.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../../..   -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-intrapartmode.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-intrapartmode.Tpo -c -o libde265_encoder_algo_la-cb-intrapartmode.lo `test -f 'cb-intrapartmode.cc' || echo './'`cb-intrapartmode.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-intrapartmode.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-intrapartmode.Tpo -c cb-intrapartmode.cc  -fPIC -DPIC -o .libs/libde265_encoder_algo_la-cb-intrapartmode.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-intrapartmode.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-intrapartmode.Tpo -c cb-intrapartmode.cc -o libde265_encoder_algo_la-cb-intrapartmode.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_algo_la-cb-intrapartmode.Tpo .deps/libde265_encoder_algo_la-cb-intrapartmode.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../../..   -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-interpartmode.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-interpartmode.Tpo -c -o libde265_encoder_algo_la-cb-interpartmode.lo `test -f 'cb-interpartmode.cc' || echo './'`cb-interpartmode.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-interpartmode.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-interpartmode.Tpo -c cb-interpartmode.cc  -fPIC -DPIC -o .libs/libde265_encoder_algo_la-cb-interpartmode.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-interpartmode.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-interpartmode.Tpo -c cb-interpartmode.cc -o libde265_encoder_algo_la-cb-interpartmode.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_algo_la-cb-interpartmode.Tpo .deps/libde265_encoder_algo_la-cb-interpartmode.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../../..   -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-skip.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-skip.Tpo -c -o libde265_encoder_algo_la-cb-skip.lo `test -f 'cb-skip.cc' || echo './'`cb-skip.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-skip.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-skip.Tpo -c cb-skip.cc  -fPIC -DPIC -o .libs/libde265_encoder_algo_la-cb-skip.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-skip.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-skip.Tpo -c cb-skip.cc -o libde265_encoder_algo_la-cb-skip.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_algo_la-cb-skip.Tpo .deps/libde265_encoder_algo_la-cb-skip.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../../..   -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-intra-inter.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-intra-inter.Tpo -c -o libde265_encoder_algo_la-cb-intra-inter.lo `test -f 'cb-intra-inter.cc' || echo './'`cb-intra-inter.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-intra-inter.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-intra-inter.Tpo -c cb-intra-inter.cc  -fPIC -DPIC -o .libs/libde265_encoder_algo_la-cb-intra-inter.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-intra-inter.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-intra-inter.Tpo -c cb-intra-inter.cc -o libde265_encoder_algo_la-cb-intra-inter.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_algo_la-cb-intra-inter.Tpo .deps/libde265_encoder_algo_la-cb-intra-inter.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../../..   -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-mergeindex.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-mergeindex.Tpo -c -o libde265_encoder_algo_la-cb-mergeindex.lo `test -f 'cb-mergeindex.cc' || echo './'`cb-mergeindex.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-mergeindex.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-mergeindex.Tpo -c cb-mergeindex.cc  -fPIC -DPIC -o .libs/libde265_encoder_algo_la-cb-mergeindex.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-cb-mergeindex.lo -MD -MP -MF .deps/libde265_encoder_algo_la-cb-mergeindex.Tpo -c cb-mergeindex.cc -o libde265_encoder_algo_la-cb-mergeindex.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_algo_la-cb-mergeindex.Tpo .deps/libde265_encoder_algo_la-cb-mergeindex.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../../..   -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-tb-split.lo -MD -MP -MF .deps/libde265_encoder_algo_la-tb-split.Tpo -c -o libde265_encoder_algo_la-tb-split.lo `test -f 'tb-split.cc' || echo './'`tb-split.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-tb-split.lo -MD -MP -MF .deps/libde265_encoder_algo_la-tb-split.Tpo -c tb-split.cc  -fPIC -DPIC -o .libs/libde265_encoder_algo_la-tb-split.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-tb-split.lo -MD -MP -MF .deps/libde265_encoder_algo_la-tb-split.Tpo -c tb-split.cc -o libde265_encoder_algo_la-tb-split.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_algo_la-tb-split.Tpo .deps/libde265_encoder_algo_la-tb-split.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../../..   -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-tb-intrapredmode.lo -MD -MP -MF .deps/libde265_encoder_algo_la-tb-intrapredmode.Tpo -c -o libde265_encoder_algo_la-tb-intrapredmode.lo `test -f 'tb-intrapredmode.cc' || echo './'`tb-intrapredmode.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-tb-intrapredmode.lo -MD -MP -MF .deps/libde265_encoder_algo_la-tb-intrapredmode.Tpo -c tb-intrapredmode.cc  -fPIC -DPIC -o .libs/libde265_encoder_algo_la-tb-intrapredmode.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-tb-intrapredmode.lo -MD -MP -MF .deps/libde265_encoder_algo_la-tb-intrapredmode.Tpo -c tb-intrapredmode.cc -o libde265_encoder_algo_la-tb-intrapredmode.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_algo_la-tb-intrapredmode.Tpo .deps/libde265_encoder_algo_la-tb-intrapredmode.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../../..   -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-pb-mv.lo -MD -MP -MF .deps/libde265_encoder_algo_la-pb-mv.Tpo -c -o libde265_encoder_algo_la-pb-mv.lo `test -f 'pb-mv.cc' || echo './'`pb-mv.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-pb-mv.lo -MD -MP -MF .deps/libde265_encoder_algo_la-pb-mv.Tpo -c pb-mv.cc  -fPIC -DPIC -o .libs/libde265_encoder_algo_la-pb-mv.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../../.. -D_FORTIFY_SOURCE=2 -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_algo_la-pb-mv.lo -MD -MP -MF .deps/libde265_encoder_algo_la-pb-mv.Tpo -c pb-mv.cc -o libde265_encoder_algo_la-pb-mv.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_algo_la-pb-mv.Tpo .deps/libde265_encoder_algo_la-pb-mv.Plo
+/bin/sh ../../../libtool  --tag=CXX   --mode=link g++ -I../.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR  -Wl,-O1,--sort-common,--as-needed,-z,relro -o libde265_encoder_algo.la  libde265_encoder_algo_la-algo.lo libde265_encoder_algo_la-coding-options.lo libde265_encoder_algo_la-ctb-qscale.lo libde265_encoder_algo_la-cb-split.lo libde265_encoder_algo_la-cb-intrapartmode.lo libde265_encoder_algo_la-cb-interpartmode.lo libde265_encoder_algo_la-cb-skip.lo libde265_encoder_algo_la-cb-intra-inter.lo libde265_encoder_algo_la-cb-mergeindex.lo libde265_encoder_algo_la-tb-split.lo libde265_encoder_algo_la-tb-intrapredmode.lo libde265_encoder_algo_la-pb-mv.lo  -lpthread -lm 
+libtool: link: ar cru .libs/libde265_encoder_algo.a .libs/libde265_encoder_algo_la-algo.o .libs/libde265_encoder_algo_la-coding-options.o .libs/libde265_encoder_algo_la-ctb-qscale.o .libs/libde265_encoder_algo_la-cb-split.o .libs/libde265_encoder_algo_la-cb-intrapartmode.o .libs/libde265_encoder_algo_la-cb-interpartmode.o .libs/libde265_encoder_algo_la-cb-skip.o .libs/libde265_encoder_algo_la-cb-intra-inter.o .libs/libde265_encoder_algo_la-cb-mergeindex.o .libs/libde265_encoder_algo_la-tb-split.o .libs/libde265_encoder_algo_la-tb-intrapredmode.o .libs/libde265_encoder_algo_la-pb-mv.o 
+libtool: link: ranlib .libs/libde265_encoder_algo.a
+libtool: link: ( cd ".libs" && rm -f "libde265_encoder_algo.la" && ln -s "../libde265_encoder_algo.la" "libde265_encoder_algo.la" )
+make[4]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder/algo'
+make[4]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder'
+/bin/sh ../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-analyze.lo -MD -MP -MF .deps/libde265_encoder_la-analyze.Tpo -c -o libde265_encoder_la-analyze.lo `test -f 'analyze.cc' || echo './'`analyze.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-analyze.lo -MD -MP -MF .deps/libde265_encoder_la-analyze.Tpo -c analyze.cc  -fPIC -DPIC -o .libs/libde265_encoder_la-analyze.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-analyze.lo -MD -MP -MF .deps/libde265_encoder_la-analyze.Tpo -c analyze.cc -o libde265_encoder_la-analyze.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_la-analyze.Tpo .deps/libde265_encoder_la-analyze.Plo
+/bin/sh ../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-encode.lo -MD -MP -MF .deps/libde265_encoder_la-encode.Tpo -c -o libde265_encoder_la-encode.lo `test -f 'encode.cc' || echo './'`encode.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-encode.lo -MD -MP -MF .deps/libde265_encoder_la-encode.Tpo -c encode.cc  -fPIC -DPIC -o .libs/libde265_encoder_la-encode.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-encode.lo -MD -MP -MF .deps/libde265_encoder_la-encode.Tpo -c encode.cc -o libde265_encoder_la-encode.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_la-encode.Tpo .deps/libde265_encoder_la-encode.Plo
+/bin/sh ../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-encoder-params.lo -MD -MP -MF .deps/libde265_encoder_la-encoder-params.Tpo -c -o libde265_encoder_la-encoder-params.lo `test -f 'encoder-params.cc' || echo './'`encoder-params.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-encoder-params.lo -MD -MP -MF .deps/libde265_encoder_la-encoder-params.Tpo -c encoder-params.cc  -fPIC -DPIC -o .libs/libde265_encoder_la-encoder-params.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-encoder-params.lo -MD -MP -MF .deps/libde265_encoder_la-encoder-params.Tpo -c encoder-params.cc -o libde265_encoder_la-encoder-params.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_la-encoder-params.Tpo .deps/libde265_encoder_la-encoder-params.Plo
+/bin/sh ../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-encoder-context.lo -MD -MP -MF .deps/libde265_encoder_la-encoder-context.Tpo -c -o libde265_encoder_la-encoder-context.lo `test -f 'encoder-context.cc' || echo './'`encoder-context.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-encoder-context.lo -MD -MP -MF .deps/libde265_encoder_la-encoder-context.Tpo -c encoder-context.cc  -fPIC -DPIC -o .libs/libde265_encoder_la-encoder-context.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-encoder-context.lo -MD -MP -MF .deps/libde265_encoder_la-encoder-context.Tpo -c encoder-context.cc -o libde265_encoder_la-encoder-context.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_la-encoder-context.Tpo .deps/libde265_encoder_la-encoder-context.Plo
+/bin/sh ../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-encpicbuf.lo -MD -MP -MF .deps/libde265_encoder_la-encpicbuf.Tpo -c -o libde265_encoder_la-encpicbuf.lo `test -f 'encpicbuf.cc' || echo './'`encpicbuf.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-encpicbuf.lo -MD -MP -MF .deps/libde265_encoder_la-encpicbuf.Tpo -c encpicbuf.cc  -fPIC -DPIC -o .libs/libde265_encoder_la-encpicbuf.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-encpicbuf.lo -MD -MP -MF .deps/libde265_encoder_la-encpicbuf.Tpo -c encpicbuf.cc -o libde265_encoder_la-encpicbuf.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_la-encpicbuf.Tpo .deps/libde265_encoder_la-encpicbuf.Plo
+/bin/sh ../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-sop.lo -MD -MP -MF .deps/libde265_encoder_la-sop.Tpo -c -o libde265_encoder_la-sop.lo `test -f 'sop.cc' || echo './'`sop.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-sop.lo -MD -MP -MF .deps/libde265_encoder_la-sop.Tpo -c sop.cc  -fPIC -DPIC -o .libs/libde265_encoder_la-sop.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_encoder_la-sop.lo -MD -MP -MF .deps/libde265_encoder_la-sop.Tpo -c sop.cc -o libde265_encoder_la-sop.o >/dev/null 2>&1
+mv -f .deps/libde265_encoder_la-sop.Tpo .deps/libde265_encoder_la-sop.Plo
+/bin/sh ../../libtool  --tag=CXX   --mode=link g++ -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR  -Wl,-O1,--sort-common,--as-needed,-z,relro -o libde265_encoder.la  libde265_encoder_la-analyze.lo libde265_encoder_la-encode.lo libde265_encoder_la-encoder-params.lo libde265_encoder_la-encoder-context.lo libde265_encoder_la-encpicbuf.lo libde265_encoder_la-sop.lo algo/libde265_encoder_algo.la -lpthread -lm 
+libtool: link: (cd .libs/libde265_encoder.lax/libde265_encoder_algo.a && ar x "/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder/algo/.libs/libde265_encoder_algo.a")
+libtool: link: ar cru .libs/libde265_encoder.a .libs/libde265_encoder_la-analyze.o .libs/libde265_encoder_la-encode.o .libs/libde265_encoder_la-encoder-params.o .libs/libde265_encoder_la-encoder-context.o .libs/libde265_encoder_la-encpicbuf.o .libs/libde265_encoder_la-sop.o   .libs/libde265_encoder.lax/libde265_encoder_algo.a/libde265_encoder_algo_la-algo.o .libs/libde265_encoder.lax/libde265_encoder_algo.a/libde265_encoder_algo_la-cb-interpartmode.o .libs/libde265_encoder.lax/libde265_encoder_algo.a/libde265_encoder_algo_la-cb-intra-inter.o .libs/libde265_encoder.lax/libde265_encoder_algo.a/libde265_encoder_algo_la-cb-intrapartmode.o .libs/libde265_encoder.lax/libde265_encoder_algo.a/libde265_encoder_algo_la-cb-mergeindex.o .libs/libde265_encoder.lax/libde265_encoder_algo.a/libde265_encoder_algo_la-cb-skip.o .libs/libde265_encoder.lax/libde265_encoder_algo.a/libde265_encoder_algo_la-cb-split.o .libs/libde265_encoder.lax/libde265_encoder_algo.a/libde265_encoder_algo_la-coding-options.o .libs/libde265_encoder.lax/libde265_encoder_algo.a/libde265_encoder_algo_la-ctb-qscale.o .libs/libde265_encoder.lax/libde265_encoder_algo.a/libde265_encoder_algo_la-pb-mv.o .libs/libde265_encoder.lax/libde265_encoder_algo.a/libde265_encoder_algo_la-tb-intrapredmode.o .libs/libde265_encoder.lax/libde265_encoder_algo.a/libde265_encoder_algo_la-tb-split.o 
+libtool: link: ranlib .libs/libde265_encoder.a
+libtool: link: rm -fr .libs/libde265_encoder.lax
+libtool: link: ( cd ".libs" && rm -f "libde265_encoder.la" && ln -s "../libde265_encoder.la" "libde265_encoder.la" )
+make[4]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder'
+make[3]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder'
+Making all in x86
+make[3]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/x86'
+/bin/sh ../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2 -I..   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_x86_la-sse.lo -MD -MP -MF .deps/libde265_x86_la-sse.Tpo -c -o libde265_x86_la-sse.lo `test -f 'sse.cc' || echo './'`sse.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_x86_la-sse.lo -MD -MP -MF .deps/libde265_x86_la-sse.Tpo -c sse.cc  -fPIC -DPIC -o .libs/libde265_x86_la-sse.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_x86_la-sse.lo -MD -MP -MF .deps/libde265_x86_la-sse.Tpo -c sse.cc -o libde265_x86_la-sse.o >/dev/null 2>&1
+mv -f .deps/libde265_x86_la-sse.Tpo .deps/libde265_x86_la-sse.Plo
+/bin/sh ../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2 -msse4.1 -I..   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_x86_sse_la-sse-motion.lo -MD -MP -MF .deps/libde265_x86_sse_la-sse-motion.Tpo -c -o libde265_x86_sse_la-sse-motion.lo `test -f 'sse-motion.cc' || echo './'`sse-motion.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -msse4.1 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_x86_sse_la-sse-motion.lo -MD -MP -MF .deps/libde265_x86_sse_la-sse-motion.Tpo -c sse-motion.cc  -fPIC -DPIC -o .libs/libde265_x86_sse_la-sse-motion.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -msse4.1 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_x86_sse_la-sse-motion.lo -MD -MP -MF .deps/libde265_x86_sse_la-sse-motion.Tpo -c sse-motion.cc -o libde265_x86_sse_la-sse-motion.o >/dev/null 2>&1
+mv -f .deps/libde265_x86_sse_la-sse-motion.Tpo .deps/libde265_x86_sse_la-sse-motion.Plo
+/bin/sh ../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..   -D_FORTIFY_SOURCE=2 -msse4.1 -I..   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_x86_sse_la-sse-dct.lo -MD -MP -MF .deps/libde265_x86_sse_la-sse-dct.Tpo -c -o libde265_x86_sse_la-sse-dct.lo `test -f 'sse-dct.cc' || echo './'`sse-dct.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -msse4.1 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_x86_sse_la-sse-dct.lo -MD -MP -MF .deps/libde265_x86_sse_la-sse-dct.Tpo -c sse-dct.cc  -fPIC -DPIC -o .libs/libde265_x86_sse_la-sse-dct.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -D_FORTIFY_SOURCE=2 -msse4.1 -I.. -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_x86_sse_la-sse-dct.lo -MD -MP -MF .deps/libde265_x86_sse_la-sse-dct.Tpo -c sse-dct.cc -o libde265_x86_sse_la-sse-dct.o >/dev/null 2>&1
+mv -f .deps/libde265_x86_sse_la-sse-dct.Tpo .deps/libde265_x86_sse_la-sse-dct.Plo
+/bin/sh ../../libtool  --tag=CXX   --mode=link g++ -msse4.1 -I..   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR  -Wl,-O1,--sort-common,--as-needed,-z,relro -o libde265_x86_sse.la  libde265_x86_sse_la-sse-motion.lo libde265_x86_sse_la-sse-dct.lo  -lpthread -lm 
+libtool: link: ar cru .libs/libde265_x86_sse.a .libs/libde265_x86_sse_la-sse-motion.o .libs/libde265_x86_sse_la-sse-dct.o 
+libtool: link: ranlib .libs/libde265_x86_sse.a
+libtool: link: ( cd ".libs" && rm -f "libde265_x86_sse.la" && ln -s "../libde265_x86_sse.la" "libde265_x86_sse.la" )
+/bin/sh ../../libtool  --tag=CXX   --mode=link g++ -I..   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR  -Wl,-O1,--sort-common,--as-needed,-z,relro -o libde265_x86.la  libde265_x86_la-sse.lo libde265_x86_sse.la -lpthread -lm 
+libtool: link: (cd .libs/libde265_x86.lax/libde265_x86_sse.a && ar x "/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/x86/./.libs/libde265_x86_sse.a")
+libtool: link: ar cru .libs/libde265_x86.a .libs/libde265_x86_la-sse.o   .libs/libde265_x86.lax/libde265_x86_sse.a/libde265_x86_sse_la-sse-dct.o .libs/libde265_x86.lax/libde265_x86_sse.a/libde265_x86_sse_la-sse-motion.o 
+libtool: link: ranlib .libs/libde265_x86.a
+libtool: link: rm -fr .libs/libde265_x86.lax
+libtool: link: ( cd ".libs" && rm -f "libde265_x86.la" && ln -s "../libde265_x86.la" "libde265_x86.la" )
+make[3]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/x86'
+make[3]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265'
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-alloc_pool.lo -MD -MP -MF .deps/libde265_la-alloc_pool.Tpo -c -o libde265_la-alloc_pool.lo `test -f 'alloc_pool.cc' || echo './'`alloc_pool.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-alloc_pool.lo -MD -MP -MF .deps/libde265_la-alloc_pool.Tpo -c alloc_pool.cc  -fPIC -DPIC -o .libs/libde265_la-alloc_pool.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-alloc_pool.lo -MD -MP -MF .deps/libde265_la-alloc_pool.Tpo -c alloc_pool.cc -o libde265_la-alloc_pool.o >/dev/null 2>&1
+mv -f .deps/libde265_la-alloc_pool.Tpo .deps/libde265_la-alloc_pool.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-bitstream.lo -MD -MP -MF .deps/libde265_la-bitstream.Tpo -c -o libde265_la-bitstream.lo `test -f 'bitstream.cc' || echo './'`bitstream.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-bitstream.lo -MD -MP -MF .deps/libde265_la-bitstream.Tpo -c bitstream.cc  -fPIC -DPIC -o .libs/libde265_la-bitstream.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-bitstream.lo -MD -MP -MF .deps/libde265_la-bitstream.Tpo -c bitstream.cc -o libde265_la-bitstream.o >/dev/null 2>&1
+mv -f .deps/libde265_la-bitstream.Tpo .deps/libde265_la-bitstream.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-cabac.lo -MD -MP -MF .deps/libde265_la-cabac.Tpo -c -o libde265_la-cabac.lo `test -f 'cabac.cc' || echo './'`cabac.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-cabac.lo -MD -MP -MF .deps/libde265_la-cabac.Tpo -c cabac.cc  -fPIC -DPIC -o .libs/libde265_la-cabac.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-cabac.lo -MD -MP -MF .deps/libde265_la-cabac.Tpo -c cabac.cc -o libde265_la-cabac.o >/dev/null 2>&1
+mv -f .deps/libde265_la-cabac.Tpo .deps/libde265_la-cabac.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-configparam.lo -MD -MP -MF .deps/libde265_la-configparam.Tpo -c -o libde265_la-configparam.lo `test -f 'configparam.cc' || echo './'`configparam.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-configparam.lo -MD -MP -MF .deps/libde265_la-configparam.Tpo -c configparam.cc  -fPIC -DPIC -o .libs/libde265_la-configparam.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-configparam.lo -MD -MP -MF .deps/libde265_la-configparam.Tpo -c configparam.cc -o libde265_la-configparam.o >/dev/null 2>&1
+mv -f .deps/libde265_la-configparam.Tpo .deps/libde265_la-configparam.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-contextmodel.lo -MD -MP -MF .deps/libde265_la-contextmodel.Tpo -c -o libde265_la-contextmodel.lo `test -f 'contextmodel.cc' || echo './'`contextmodel.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-contextmodel.lo -MD -MP -MF .deps/libde265_la-contextmodel.Tpo -c contextmodel.cc  -fPIC -DPIC -o .libs/libde265_la-contextmodel.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-contextmodel.lo -MD -MP -MF .deps/libde265_la-contextmodel.Tpo -c contextmodel.cc -o libde265_la-contextmodel.o >/dev/null 2>&1
+mv -f .deps/libde265_la-contextmodel.Tpo .deps/libde265_la-contextmodel.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-de265.lo -MD -MP -MF .deps/libde265_la-de265.Tpo -c -o libde265_la-de265.lo `test -f 'de265.cc' || echo './'`de265.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-de265.lo -MD -MP -MF .deps/libde265_la-de265.Tpo -c de265.cc  -fPIC -DPIC -o .libs/libde265_la-de265.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-de265.lo -MD -MP -MF .deps/libde265_la-de265.Tpo -c de265.cc -o libde265_la-de265.o >/dev/null 2>&1
+mv -f .deps/libde265_la-de265.Tpo .deps/libde265_la-de265.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-deblock.lo -MD -MP -MF .deps/libde265_la-deblock.Tpo -c -o libde265_la-deblock.lo `test -f 'deblock.cc' || echo './'`deblock.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-deblock.lo -MD -MP -MF .deps/libde265_la-deblock.Tpo -c deblock.cc  -fPIC -DPIC -o .libs/libde265_la-deblock.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-deblock.lo -MD -MP -MF .deps/libde265_la-deblock.Tpo -c deblock.cc -o libde265_la-deblock.o >/dev/null 2>&1
+mv -f .deps/libde265_la-deblock.Tpo .deps/libde265_la-deblock.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-decctx.lo -MD -MP -MF .deps/libde265_la-decctx.Tpo -c -o libde265_la-decctx.lo `test -f 'decctx.cc' || echo './'`decctx.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-decctx.lo -MD -MP -MF .deps/libde265_la-decctx.Tpo -c decctx.cc  -fPIC -DPIC -o .libs/libde265_la-decctx.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-decctx.lo -MD -MP -MF .deps/libde265_la-decctx.Tpo -c decctx.cc -o libde265_la-decctx.o >/dev/null 2>&1
+mv -f .deps/libde265_la-decctx.Tpo .deps/libde265_la-decctx.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-en265.lo -MD -MP -MF .deps/libde265_la-en265.Tpo -c -o libde265_la-en265.lo `test -f 'en265.cc' || echo './'`en265.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-en265.lo -MD -MP -MF .deps/libde265_la-en265.Tpo -c en265.cc  -fPIC -DPIC -o .libs/libde265_la-en265.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-en265.lo -MD -MP -MF .deps/libde265_la-en265.Tpo -c en265.cc -o libde265_la-en265.o >/dev/null 2>&1
+mv -f .deps/libde265_la-en265.Tpo .deps/libde265_la-en265.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-fallback.lo -MD -MP -MF .deps/libde265_la-fallback.Tpo -c -o libde265_la-fallback.lo `test -f 'fallback.cc' || echo './'`fallback.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-fallback.lo -MD -MP -MF .deps/libde265_la-fallback.Tpo -c fallback.cc  -fPIC -DPIC -o .libs/libde265_la-fallback.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-fallback.lo -MD -MP -MF .deps/libde265_la-fallback.Tpo -c fallback.cc -o libde265_la-fallback.o >/dev/null 2>&1
+mv -f .deps/libde265_la-fallback.Tpo .deps/libde265_la-fallback.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-fallback-dct.lo -MD -MP -MF .deps/libde265_la-fallback-dct.Tpo -c -o libde265_la-fallback-dct.lo `test -f 'fallback-dct.cc' || echo './'`fallback-dct.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-fallback-dct.lo -MD -MP -MF .deps/libde265_la-fallback-dct.Tpo -c fallback-dct.cc  -fPIC -DPIC -o .libs/libde265_la-fallback-dct.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-fallback-dct.lo -MD -MP -MF .deps/libde265_la-fallback-dct.Tpo -c fallback-dct.cc -o libde265_la-fallback-dct.o >/dev/null 2>&1
+mv -f .deps/libde265_la-fallback-dct.Tpo .deps/libde265_la-fallback-dct.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-fallback-motion.lo -MD -MP -MF .deps/libde265_la-fallback-motion.Tpo -c -o libde265_la-fallback-motion.lo `test -f 'fallback-motion.cc' || echo './'`fallback-motion.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-fallback-motion.lo -MD -MP -MF .deps/libde265_la-fallback-motion.Tpo -c fallback-motion.cc  -fPIC -DPIC -o .libs/libde265_la-fallback-motion.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-fallback-motion.lo -MD -MP -MF .deps/libde265_la-fallback-motion.Tpo -c fallback-motion.cc -o libde265_la-fallback-motion.o >/dev/null 2>&1
+mv -f .deps/libde265_la-fallback-motion.Tpo .deps/libde265_la-fallback-motion.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-dpb.lo -MD -MP -MF .deps/libde265_la-dpb.Tpo -c -o libde265_la-dpb.lo `test -f 'dpb.cc' || echo './'`dpb.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-dpb.lo -MD -MP -MF .deps/libde265_la-dpb.Tpo -c dpb.cc  -fPIC -DPIC -o .libs/libde265_la-dpb.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-dpb.lo -MD -MP -MF .deps/libde265_la-dpb.Tpo -c dpb.cc -o libde265_la-dpb.o >/dev/null 2>&1
+mv -f .deps/libde265_la-dpb.Tpo .deps/libde265_la-dpb.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-image.lo -MD -MP -MF .deps/libde265_la-image.Tpo -c -o libde265_la-image.lo `test -f 'image.cc' || echo './'`image.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-image.lo -MD -MP -MF .deps/libde265_la-image.Tpo -c image.cc  -fPIC -DPIC -o .libs/libde265_la-image.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-image.lo -MD -MP -MF .deps/libde265_la-image.Tpo -c image.cc -o libde265_la-image.o >/dev/null 2>&1
+mv -f .deps/libde265_la-image.Tpo .deps/libde265_la-image.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-image-io.lo -MD -MP -MF .deps/libde265_la-image-io.Tpo -c -o libde265_la-image-io.lo `test -f 'image-io.cc' || echo './'`image-io.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-image-io.lo -MD -MP -MF .deps/libde265_la-image-io.Tpo -c image-io.cc  -fPIC -DPIC -o .libs/libde265_la-image-io.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-image-io.lo -MD -MP -MF .deps/libde265_la-image-io.Tpo -c image-io.cc -o libde265_la-image-io.o >/dev/null 2>&1
+mv -f .deps/libde265_la-image-io.Tpo .deps/libde265_la-image-io.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-intrapred.lo -MD -MP -MF .deps/libde265_la-intrapred.Tpo -c -o libde265_la-intrapred.lo `test -f 'intrapred.cc' || echo './'`intrapred.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-intrapred.lo -MD -MP -MF .deps/libde265_la-intrapred.Tpo -c intrapred.cc  -fPIC -DPIC -o .libs/libde265_la-intrapred.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-intrapred.lo -MD -MP -MF .deps/libde265_la-intrapred.Tpo -c intrapred.cc -o libde265_la-intrapred.o >/dev/null 2>&1
+mv -f .deps/libde265_la-intrapred.Tpo .deps/libde265_la-intrapred.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-md5.lo -MD -MP -MF .deps/libde265_la-md5.Tpo -c -o libde265_la-md5.lo `test -f 'md5.cc' || echo './'`md5.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-md5.lo -MD -MP -MF .deps/libde265_la-md5.Tpo -c md5.cc  -fPIC -DPIC -o .libs/libde265_la-md5.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-md5.lo -MD -MP -MF .deps/libde265_la-md5.Tpo -c md5.cc -o libde265_la-md5.o >/dev/null 2>&1
+mv -f .deps/libde265_la-md5.Tpo .deps/libde265_la-md5.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-motion.lo -MD -MP -MF .deps/libde265_la-motion.Tpo -c -o libde265_la-motion.lo `test -f 'motion.cc' || echo './'`motion.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-motion.lo -MD -MP -MF .deps/libde265_la-motion.Tpo -c motion.cc  -fPIC -DPIC -o .libs/libde265_la-motion.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-motion.lo -MD -MP -MF .deps/libde265_la-motion.Tpo -c motion.cc -o libde265_la-motion.o >/dev/null 2>&1
+mv -f .deps/libde265_la-motion.Tpo .deps/libde265_la-motion.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-nal.lo -MD -MP -MF .deps/libde265_la-nal.Tpo -c -o libde265_la-nal.lo `test -f 'nal.cc' || echo './'`nal.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-nal.lo -MD -MP -MF .deps/libde265_la-nal.Tpo -c nal.cc  -fPIC -DPIC -o .libs/libde265_la-nal.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-nal.lo -MD -MP -MF .deps/libde265_la-nal.Tpo -c nal.cc -o libde265_la-nal.o >/dev/null 2>&1
+mv -f .deps/libde265_la-nal.Tpo .deps/libde265_la-nal.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-nal-parser.lo -MD -MP -MF .deps/libde265_la-nal-parser.Tpo -c -o libde265_la-nal-parser.lo `test -f 'nal-parser.cc' || echo './'`nal-parser.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-nal-parser.lo -MD -MP -MF .deps/libde265_la-nal-parser.Tpo -c nal-parser.cc  -fPIC -DPIC -o .libs/libde265_la-nal-parser.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-nal-parser.lo -MD -MP -MF .deps/libde265_la-nal-parser.Tpo -c nal-parser.cc -o libde265_la-nal-parser.o >/dev/null 2>&1
+mv -f .deps/libde265_la-nal-parser.Tpo .deps/libde265_la-nal-parser.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-pps.lo -MD -MP -MF .deps/libde265_la-pps.Tpo -c -o libde265_la-pps.lo `test -f 'pps.cc' || echo './'`pps.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-pps.lo -MD -MP -MF .deps/libde265_la-pps.Tpo -c pps.cc  -fPIC -DPIC -o .libs/libde265_la-pps.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-pps.lo -MD -MP -MF .deps/libde265_la-pps.Tpo -c pps.cc -o libde265_la-pps.o >/dev/null 2>&1
+mv -f .deps/libde265_la-pps.Tpo .deps/libde265_la-pps.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-quality.lo -MD -MP -MF .deps/libde265_la-quality.Tpo -c -o libde265_la-quality.lo `test -f 'quality.cc' || echo './'`quality.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-quality.lo -MD -MP -MF .deps/libde265_la-quality.Tpo -c quality.cc  -fPIC -DPIC -o .libs/libde265_la-quality.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-quality.lo -MD -MP -MF .deps/libde265_la-quality.Tpo -c quality.cc -o libde265_la-quality.o >/dev/null 2>&1
+mv -f .deps/libde265_la-quality.Tpo .deps/libde265_la-quality.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-refpic.lo -MD -MP -MF .deps/libde265_la-refpic.Tpo -c -o libde265_la-refpic.lo `test -f 'refpic.cc' || echo './'`refpic.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-refpic.lo -MD -MP -MF .deps/libde265_la-refpic.Tpo -c refpic.cc  -fPIC -DPIC -o .libs/libde265_la-refpic.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-refpic.lo -MD -MP -MF .deps/libde265_la-refpic.Tpo -c refpic.cc -o libde265_la-refpic.o >/dev/null 2>&1
+mv -f .deps/libde265_la-refpic.Tpo .deps/libde265_la-refpic.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-sao.lo -MD -MP -MF .deps/libde265_la-sao.Tpo -c -o libde265_la-sao.lo `test -f 'sao.cc' || echo './'`sao.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-sao.lo -MD -MP -MF .deps/libde265_la-sao.Tpo -c sao.cc  -fPIC -DPIC -o .libs/libde265_la-sao.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-sao.lo -MD -MP -MF .deps/libde265_la-sao.Tpo -c sao.cc -o libde265_la-sao.o >/dev/null 2>&1
+mv -f .deps/libde265_la-sao.Tpo .deps/libde265_la-sao.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-scan.lo -MD -MP -MF .deps/libde265_la-scan.Tpo -c -o libde265_la-scan.lo `test -f 'scan.cc' || echo './'`scan.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-scan.lo -MD -MP -MF .deps/libde265_la-scan.Tpo -c scan.cc  -fPIC -DPIC -o .libs/libde265_la-scan.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-scan.lo -MD -MP -MF .deps/libde265_la-scan.Tpo -c scan.cc -o libde265_la-scan.o >/dev/null 2>&1
+mv -f .deps/libde265_la-scan.Tpo .deps/libde265_la-scan.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-sei.lo -MD -MP -MF .deps/libde265_la-sei.Tpo -c -o libde265_la-sei.lo `test -f 'sei.cc' || echo './'`sei.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-sei.lo -MD -MP -MF .deps/libde265_la-sei.Tpo -c sei.cc  -fPIC -DPIC -o .libs/libde265_la-sei.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-sei.lo -MD -MP -MF .deps/libde265_la-sei.Tpo -c sei.cc -o libde265_la-sei.o >/dev/null 2>&1
+mv -f .deps/libde265_la-sei.Tpo .deps/libde265_la-sei.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-slice.lo -MD -MP -MF .deps/libde265_la-slice.Tpo -c -o libde265_la-slice.lo `test -f 'slice.cc' || echo './'`slice.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-slice.lo -MD -MP -MF .deps/libde265_la-slice.Tpo -c slice.cc  -fPIC -DPIC -o .libs/libde265_la-slice.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-slice.lo -MD -MP -MF .deps/libde265_la-slice.Tpo -c slice.cc -o libde265_la-slice.o >/dev/null 2>&1
+mv -f .deps/libde265_la-slice.Tpo .deps/libde265_la-slice.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-sps.lo -MD -MP -MF .deps/libde265_la-sps.Tpo -c -o libde265_la-sps.lo `test -f 'sps.cc' || echo './'`sps.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-sps.lo -MD -MP -MF .deps/libde265_la-sps.Tpo -c sps.cc  -fPIC -DPIC -o .libs/libde265_la-sps.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-sps.lo -MD -MP -MF .deps/libde265_la-sps.Tpo -c sps.cc -o libde265_la-sps.o >/dev/null 2>&1
+mv -f .deps/libde265_la-sps.Tpo .deps/libde265_la-sps.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-threads.lo -MD -MP -MF .deps/libde265_la-threads.Tpo -c -o libde265_la-threads.lo `test -f 'threads.cc' || echo './'`threads.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-threads.lo -MD -MP -MF .deps/libde265_la-threads.Tpo -c threads.cc  -fPIC -DPIC -o .libs/libde265_la-threads.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-threads.lo -MD -MP -MF .deps/libde265_la-threads.Tpo -c threads.cc -o libde265_la-threads.o >/dev/null 2>&1
+mv -f .deps/libde265_la-threads.Tpo .deps/libde265_la-threads.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-transform.lo -MD -MP -MF .deps/libde265_la-transform.Tpo -c -o libde265_la-transform.lo `test -f 'transform.cc' || echo './'`transform.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-transform.lo -MD -MP -MF .deps/libde265_la-transform.Tpo -c transform.cc  -fPIC -DPIC -o .libs/libde265_la-transform.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-transform.lo -MD -MP -MF .deps/libde265_la-transform.Tpo -c transform.cc -o libde265_la-transform.o >/dev/null 2>&1
+mv -f .deps/libde265_la-transform.Tpo .deps/libde265_la-transform.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-util.lo -MD -MP -MF .deps/libde265_la-util.Tpo -c -o libde265_la-util.lo `test -f 'util.cc' || echo './'`util.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-util.lo -MD -MP -MF .deps/libde265_la-util.Tpo -c util.cc  -fPIC -DPIC -o .libs/libde265_la-util.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-util.lo -MD -MP -MF .deps/libde265_la-util.Tpo -c util.cc -o libde265_la-util.o >/dev/null 2>&1
+mv -f .deps/libde265_la-util.Tpo .deps/libde265_la-util.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-visualize.lo -MD -MP -MF .deps/libde265_la-visualize.Tpo -c -o libde265_la-visualize.lo `test -f 'visualize.cc' || echo './'`visualize.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-visualize.lo -MD -MP -MF .deps/libde265_la-visualize.Tpo -c visualize.cc  -fPIC -DPIC -o .libs/libde265_la-visualize.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-visualize.lo -MD -MP -MF .deps/libde265_la-visualize.Tpo -c visualize.cc -o libde265_la-visualize.o >/dev/null 2>&1
+mv -f .deps/libde265_la-visualize.Tpo .deps/libde265_la-visualize.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-vps.lo -MD -MP -MF .deps/libde265_la-vps.Tpo -c -o libde265_la-vps.lo `test -f 'vps.cc' || echo './'`vps.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-vps.lo -MD -MP -MF .deps/libde265_la-vps.Tpo -c vps.cc  -fPIC -DPIC -o .libs/libde265_la-vps.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-vps.lo -MD -MP -MF .deps/libde265_la-vps.Tpo -c vps.cc -o libde265_la-vps.o >/dev/null 2>&1
+mv -f .deps/libde265_la-vps.Tpo .deps/libde265_la-vps.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-vui.lo -MD -MP -MF .deps/libde265_la-vui.Tpo -c -o libde265_la-vui.lo `test -f 'vui.cc' || echo './'`vui.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-vui.lo -MD -MP -MF .deps/libde265_la-vui.Tpo -c vui.cc  -fPIC -DPIC -o .libs/libde265_la-vui.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -DLIBDE265_EXPORTS -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT libde265_la-vui.lo -MD -MP -MF .deps/libde265_la-vui.Tpo -c vui.cc -o libde265_la-vui.o >/dev/null 2>&1
+mv -f .deps/libde265_la-vui.Tpo .deps/libde265_la-vui.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=link g++  -DLIBDE265_EXPORTS  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -version-info 0:10:0  -Wl,-O1,--sort-common,--as-needed,-z,relro -o libde265.la -rpath /usr/lib libde265_la-alloc_pool.lo libde265_la-bitstream.lo libde265_la-cabac.lo libde265_la-configparam.lo libde265_la-contextmodel.lo libde265_la-de265.lo libde265_la-deblock.lo libde265_la-decctx.lo libde265_la-en265.lo libde265_la-fallback.lo libde265_la-fallback-dct.lo libde265_la-fallback-motion.lo libde265_la-dpb.lo libde265_la-image.lo libde265_la-image-io.lo libde265_la-intrapred.lo libde265_la-md5.lo libde265_la-motion.lo libde265_la-nal.lo libde265_la-nal-parser.lo libde265_la-pps.lo libde265_la-quality.lo libde265_la-refpic.lo libde265_la-sao.lo libde265_la-scan.lo libde265_la-sei.lo libde265_la-slice.lo libde265_la-sps.lo libde265_la-threads.lo libde265_la-transform.lo libde265_la-util.lo libde265_la-visualize.lo libde265_la-vps.lo libde265_la-vui.lo  -lstdc++ encoder/libde265_encoder.la x86/libde265_x86.la  -lpthread -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/crtbeginS.o  .libs/libde265_la-alloc_pool.o .libs/libde265_la-bitstream.o .libs/libde265_la-cabac.o .libs/libde265_la-configparam.o .libs/libde265_la-contextmodel.o .libs/libde265_la-de265.o .libs/libde265_la-deblock.o .libs/libde265_la-decctx.o .libs/libde265_la-en265.o .libs/libde265_la-fallback.o .libs/libde265_la-fallback-dct.o .libs/libde265_la-fallback-motion.o .libs/libde265_la-dpb.o .libs/libde265_la-image.o .libs/libde265_la-image-io.o .libs/libde265_la-intrapred.o .libs/libde265_la-md5.o .libs/libde265_la-motion.o .libs/libde265_la-nal.o .libs/libde265_la-nal-parser.o .libs/libde265_la-pps.o .libs/libde265_la-quality.o .libs/libde265_la-refpic.o .libs/libde265_la-sao.o .libs/libde265_la-scan.o .libs/libde265_la-sei.o .libs/libde265_la-slice.o .libs/libde265_la-sps.o .libs/libde265_la-threads.o .libs/libde265_la-transform.o .libs/libde265_la-util.o .libs/libde265_la-visualize.o .libs/libde265_la-vps.o .libs/libde265_la-vui.o  -Wl,--whole-archive encoder/.libs/libde265_encoder.a x86/.libs/libde265_x86.a -Wl,--no-whole-archive  -lpthread -L/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/crtn.o  -march=x86-64 -mtune=generic -O2 -fstack-protector-strong -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro   -Wl,-soname -Wl,libde265.so.0 -o .libs/libde265.so.0.0.10
+libtool: link: (cd ".libs" && rm -f "libde265.so.0" && ln -s "libde265.so.0.0.10" "libde265.so.0")
+libtool: link: (cd ".libs" && rm -f "libde265.so" && ln -s "libde265.so.0.0.10" "libde265.so")
+libtool: link: (cd .libs/libde265.lax/libde265_encoder.a && ar x "/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder/.libs/libde265_encoder.a")
+libtool: link: (cd .libs/libde265.lax/libde265_x86.a && ar x "/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/x86/.libs/libde265_x86.a")
+libtool: link: ar cru .libs/libde265.a  libde265_la-alloc_pool.o libde265_la-bitstream.o libde265_la-cabac.o libde265_la-configparam.o libde265_la-contextmodel.o libde265_la-de265.o libde265_la-deblock.o libde265_la-decctx.o libde265_la-en265.o libde265_la-fallback.o libde265_la-fallback-dct.o libde265_la-fallback-motion.o libde265_la-dpb.o libde265_la-image.o libde265_la-image-io.o libde265_la-intrapred.o libde265_la-md5.o libde265_la-motion.o libde265_la-nal.o libde265_la-nal-parser.o libde265_la-pps.o libde265_la-quality.o libde265_la-refpic.o libde265_la-sao.o libde265_la-scan.o libde265_la-sei.o libde265_la-slice.o libde265_la-sps.o libde265_la-threads.o libde265_la-transform.o libde265_la-util.o libde265_la-visualize.o libde265_la-vps.o libde265_la-vui.o  .libs/libde265.lax/libde265_encoder.a/libde265_encoder_algo_la-algo.o .libs/libde265.lax/libde265_encoder.a/libde265_encoder_algo_la-cb-interpartmode.o .libs/libde265.lax/libde265_encoder.a/libde265_encoder_algo_la-cb-intra-inter.o .libs/libde265.lax/libde265_encoder.a/libde265_encoder_algo_la-cb-intrapartmode.o .libs/libde265.lax/libde265_encoder.a/libde265_encoder_algo_la-cb-mergeindex.o .libs/libde265.lax/libde265_encoder.a/libde265_encoder_algo_la-cb-skip.o .libs/libde265.lax/libde265_encoder.a/libde265_encoder_algo_la-cb-split.o .libs/libde265.lax/libde265_encoder.a/libde265_encoder_algo_la-coding-options.o .libs/libde265.lax/libde265_encoder.a/libde265_encoder_algo_la-ctb-qscale.o .libs/libde265.lax/libde265_encoder.a/libde265_encoder_algo_la-pb-mv.o .libs/libde265.lax/libde265_encoder.a/libde265_encoder_algo_la-tb-intrapredmode.o .libs/libde265.lax/libde265_encoder.a/libde265_encoder_algo_la-tb-split.o .libs/libde265.lax/libde265_encoder.a/libde265_encoder_la-analyze.o .libs/libde265.lax/libde265_encoder.a/libde265_encoder_la-encode.o .libs/libde265.lax/libde265_encoder.a/libde265_encoder_la-encoder-context.o .libs/libde265.lax/libde265_encoder.a/libde265_encoder_la-encoder-params.o .libs/libde265.lax/libde265_encoder.a/libde265_encoder_la-encpicbuf.o .libs/libde265.lax/libde265_encoder.a/libde265_encoder_la-sop.o  .libs/libde265.lax/libde265_x86.a/libde265_x86_la-sse.o .libs/libde265.lax/libde265_x86.a/libde265_x86_sse_la-sse-dct.o .libs/libde265.lax/libde265_x86.a/libde265_x86_sse_la-sse-motion.o 
+libtool: link: ranlib .libs/libde265.a
+libtool: link: rm -fr .libs/libde265.lax
+libtool: link: ( cd ".libs" && rm -f "libde265.la" && ln -s "../libde265.la" "libde265.la" )
+make[3]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265'
+Making all in dec265
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/dec265'
+g++ -DHAVE_CONFIG_H -I. -I..  -I../libde265 -D_FORTIFY_SOURCE=2  -D_GNU_SOURCE=1 -D_REENTRANT -I/usr/include/SDL -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT dec265-dec265.o -MD -MP -MF .deps/dec265-dec265.Tpo -c -o dec265-dec265.o `test -f 'dec265.cc' || echo './'`dec265.cc
+mv -f .deps/dec265-dec265.Tpo .deps/dec265-dec265.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I../libde265 -D_FORTIFY_SOURCE=2  -D_GNU_SOURCE=1 -D_REENTRANT -I/usr/include/SDL -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT dec265-sdl.o -MD -MP -MF .deps/dec265-sdl.Tpo -c -o dec265-sdl.o `test -f 'sdl.cc' || echo './'`sdl.cc
+mv -f .deps/dec265-sdl.Tpo .deps/dec265-sdl.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link g++  -D_GNU_SOURCE=1 -D_REENTRANT -I/usr/include/SDL -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR  -lSDL -lpthread  -Wl,-O1,--sort-common,--as-needed,-z,relro -o dec265 dec265-dec265.o dec265-sdl.o ../libde265/libde265.la -lstdc++ -lpthread -lm 
+libtool: link: g++ -D_GNU_SOURCE=1 -D_REENTRANT -I/usr/include/SDL -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -o .libs/dec265 dec265-dec265.o dec265-sdl.o  -lSDL ../libde265/.libs/libde265.so -lstdc++ -lpthread -lm
+g++ -DHAVE_CONFIG_H -I. -I..  -I../libde265 -D_FORTIFY_SOURCE=2  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT hdrcopy-hdrcopy.o -MD -MP -MF .deps/hdrcopy-hdrcopy.Tpo -c -o hdrcopy-hdrcopy.o `test -f 'hdrcopy.cc' || echo './'`hdrcopy.cc
+mv -f .deps/hdrcopy-hdrcopy.Tpo .deps/hdrcopy-hdrcopy.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link g++  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR  -Wl,-O1,--sort-common,--as-needed,-z,relro -o hdrcopy hdrcopy-hdrcopy.o ../libde265/libde265.la -lstdc++ -lpthread -lm 
+libtool: link: g++ -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -o .libs/hdrcopy hdrcopy-hdrcopy.o  ../libde265/.libs/libde265.so -lstdc++ -lpthread -lm
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/dec265'
+Making all in enc265
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/enc265'
+g++ -DHAVE_CONFIG_H -I. -I..  -I../libde265 -D_FORTIFY_SOURCE=2  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT enc265-enc265.o -MD -MP -MF .deps/enc265-enc265.Tpo -c -o enc265-enc265.o `test -f 'enc265.cc' || echo './'`enc265.cc
+mv -f .deps/enc265-enc265.Tpo .deps/enc265-enc265.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link g++  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR  -Wl,-O1,--sort-common,--as-needed,-z,relro -o enc265 enc265-enc265.o ../libde265/libde265.la -lstdc++ -lpthread -lm 
+libtool: link: g++ -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -o .libs/enc265 enc265-enc265.o  ../libde265/.libs/libde265.so -lstdc++ -lpthread -lm
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/enc265'
+Making all in tools
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/tools'
+g++ -DHAVE_CONFIG_H -I. -I..  -I../libde265 -D_FORTIFY_SOURCE=2  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT gen_enc_table-gen-entropy-table.o -MD -MP -MF .deps/gen_enc_table-gen-entropy-table.Tpo -c -o gen_enc_table-gen-entropy-table.o `test -f 'gen-entropy-table.cc' || echo './'`gen-entropy-table.cc
+mv -f .deps/gen_enc_table-gen-entropy-table.Tpo .deps/gen_enc_table-gen-entropy-table.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link g++  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR  -Wl,-O1,--sort-common,--as-needed,-z,relro -o gen-enc-table gen_enc_table-gen-entropy-table.o ../libde265/libde265.la -lstdc++ -lpthread -lm 
+libtool: link: g++ -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -o .libs/gen-enc-table gen_enc_table-gen-entropy-table.o  ../libde265/.libs/libde265.so -lstdc++ -lpthread -lm
+g++ -DHAVE_CONFIG_H -I. -I..  -I../libde265 -D_FORTIFY_SOURCE=2  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT yuv_distortion-yuv-distortion.o -MD -MP -MF .deps/yuv_distortion-yuv-distortion.Tpo -c -o yuv_distortion-yuv-distortion.o `test -f 'yuv-distortion.cc' || echo './'`yuv-distortion.cc
+mv -f .deps/yuv_distortion-yuv-distortion.Tpo .deps/yuv_distortion-yuv-distortion.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link g++  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR  -Wl,-O1,--sort-common,--as-needed,-z,relro -o yuv-distortion yuv_distortion-yuv-distortion.o ../libde265/libde265.la -lstdc++ -lpthread -lm 
+libtool: link: g++ -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -o .libs/yuv-distortion yuv_distortion-yuv-distortion.o  ../libde265/.libs/libde265.so -lstdc++ -lpthread -lm
+g++ -DHAVE_CONFIG_H -I. -I..  -I../libde265 -D_FORTIFY_SOURCE=2  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT rd_curves-rd-curves.o -MD -MP -MF .deps/rd_curves-rd-curves.Tpo -c -o rd_curves-rd-curves.o `test -f 'rd-curves.cc' || echo './'`rd-curves.cc
+mv -f .deps/rd_curves-rd-curves.Tpo .deps/rd_curves-rd-curves.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link g++  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR  -Wl,-O1,--sort-common,--as-needed,-z,relro -o rd-curves rd_curves-rd-curves.o ../libde265/libde265.la -lstdc++ -lpthread -lm 
+libtool: link: g++ -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -o .libs/rd-curves rd_curves-rd-curves.o  ../libde265/.libs/libde265.so -lstdc++ -lpthread -lm
+g++ -DHAVE_CONFIG_H -I. -I..  -I../libde265 -D_FORTIFY_SOURCE=2  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT block_rate_estim-block-rate-estim.o -MD -MP -MF .deps/block_rate_estim-block-rate-estim.Tpo -c -o block_rate_estim-block-rate-estim.o `test -f 'block-rate-estim.cc' || echo './'`block-rate-estim.cc
+mv -f .deps/block_rate_estim-block-rate-estim.Tpo .deps/block_rate_estim-block-rate-estim.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link g++  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR  -Wl,-O1,--sort-common,--as-needed,-z,relro -o block-rate-estim block_rate_estim-block-rate-estim.o ../libde265/libde265.la -lstdc++ -lpthread -lm 
+libtool: link: g++ -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -o .libs/block-rate-estim block_rate_estim-block-rate-estim.o  ../libde265/.libs/libde265.so -lstdc++ -lpthread -lm
+g++ -DHAVE_CONFIG_H -I. -I..  -I../libde265 -D_FORTIFY_SOURCE=2  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT tests-tests.o -MD -MP -MF .deps/tests-tests.Tpo -c -o tests-tests.o `test -f 'tests.cc' || echo './'`tests.cc
+mv -f .deps/tests-tests.Tpo .deps/tests-tests.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link g++  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR  -Wl,-O1,--sort-common,--as-needed,-z,relro -o tests tests-tests.o ../libde265/libde265.la -lstdc++ -lpthread -lm 
+libtool: link: g++ -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -o .libs/tests tests-tests.o  ../libde265/.libs/libde265.so -lstdc++ -lpthread -lm
+g++ -DHAVE_CONFIG_H -I. -I..  -I../libde265 -D_FORTIFY_SOURCE=2  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT bjoentegaard-bjoentegaard.o -MD -MP -MF .deps/bjoentegaard-bjoentegaard.Tpo -c -o bjoentegaard-bjoentegaard.o `test -f 'bjoentegaard.cc' || echo './'`bjoentegaard.cc
+mv -f .deps/bjoentegaard-bjoentegaard.Tpo .deps/bjoentegaard-bjoentegaard.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link g++  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR  -Wl,-O1,--sort-common,--as-needed,-z,relro -o bjoentegaard bjoentegaard-bjoentegaard.o ../libde265/libde265.la -lstdc++ -lpthread -lm 
+libtool: link: g++ -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -o .libs/bjoentegaard bjoentegaard-bjoentegaard.o  ../libde265/.libs/libde265.so -lstdc++ -lpthread -lm
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/tools'
+Making all in sherlock265
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/sherlock265'
+g++ -DHAVE_CONFIG_H -I. -I..  -I../libde265 -D_FORTIFY_SOURCE=2 -I/usr/include/qt/QtWidgets -I/usr/include/qt -I/usr/include/qt/QtGui -I/usr/include/qt -I/usr/include/qt/QtCore -I/usr/include/qt -std=c++0x -fPIC   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT sherlock265-sherlock265.o -MD -MP -MF .deps/sherlock265-sherlock265.Tpo -c -o sherlock265-sherlock265.o `test -f 'sherlock265.cc' || echo './'`sherlock265.cc
+mv -f .deps/sherlock265-sherlock265.Tpo .deps/sherlock265-sherlock265.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I../libde265 -D_FORTIFY_SOURCE=2 -I/usr/include/qt/QtWidgets -I/usr/include/qt -I/usr/include/qt/QtGui -I/usr/include/qt -I/usr/include/qt/QtCore -I/usr/include/qt -std=c++0x -fPIC   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT sherlock265-VideoPlayer.o -MD -MP -MF .deps/sherlock265-VideoPlayer.Tpo -c -o sherlock265-VideoPlayer.o `test -f 'VideoPlayer.cc' || echo './'`VideoPlayer.cc
+mv -f .deps/sherlock265-VideoPlayer.Tpo .deps/sherlock265-VideoPlayer.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I../libde265 -D_FORTIFY_SOURCE=2 -I/usr/include/qt/QtWidgets -I/usr/include/qt -I/usr/include/qt/QtGui -I/usr/include/qt -I/usr/include/qt/QtCore -I/usr/include/qt -std=c++0x -fPIC   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT sherlock265-VideoDecoder.o -MD -MP -MF .deps/sherlock265-VideoDecoder.Tpo -c -o sherlock265-VideoDecoder.o `test -f 'VideoDecoder.cc' || echo './'`VideoDecoder.cc
+mv -f .deps/sherlock265-VideoDecoder.Tpo .deps/sherlock265-VideoDecoder.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I../libde265 -D_FORTIFY_SOURCE=2 -I/usr/include/qt/QtWidgets -I/usr/include/qt -I/usr/include/qt/QtGui -I/usr/include/qt -I/usr/include/qt/QtCore -I/usr/include/qt -std=c++0x -fPIC   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT sherlock265-VideoWidget.o -MD -MP -MF .deps/sherlock265-VideoWidget.Tpo -c -o sherlock265-VideoWidget.o `test -f 'VideoWidget.cc' || echo './'`VideoWidget.cc
+mv -f .deps/sherlock265-VideoWidget.Tpo .deps/sherlock265-VideoWidget.Po
+/usr/bin/qtchooser -run-tool=moc -qt=5   VideoPlayer.hh -o moc_VideoPlayer.cpp
+g++ -DHAVE_CONFIG_H -I. -I..  -I../libde265 -D_FORTIFY_SOURCE=2 -I/usr/include/qt/QtWidgets -I/usr/include/qt -I/usr/include/qt/QtGui -I/usr/include/qt -I/usr/include/qt/QtCore -I/usr/include/qt -std=c++0x -fPIC   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT sherlock265-moc_VideoPlayer.o -MD -MP -MF .deps/sherlock265-moc_VideoPlayer.Tpo -c -o sherlock265-moc_VideoPlayer.o `test -f 'moc_VideoPlayer.cpp' || echo './'`moc_VideoPlayer.cpp
+mv -f .deps/sherlock265-moc_VideoPlayer.Tpo .deps/sherlock265-moc_VideoPlayer.Po
+/usr/bin/qtchooser -run-tool=moc -qt=5   VideoDecoder.hh -o moc_VideoDecoder.cpp
+g++ -DHAVE_CONFIG_H -I. -I..  -I../libde265 -D_FORTIFY_SOURCE=2 -I/usr/include/qt/QtWidgets -I/usr/include/qt -I/usr/include/qt/QtGui -I/usr/include/qt -I/usr/include/qt/QtCore -I/usr/include/qt -std=c++0x -fPIC   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT sherlock265-moc_VideoDecoder.o -MD -MP -MF .deps/sherlock265-moc_VideoDecoder.Tpo -c -o sherlock265-moc_VideoDecoder.o `test -f 'moc_VideoDecoder.cpp' || echo './'`moc_VideoDecoder.cpp
+mv -f .deps/sherlock265-moc_VideoDecoder.Tpo .deps/sherlock265-moc_VideoDecoder.Po
+/usr/bin/qtchooser -run-tool=moc -qt=5   VideoWidget.hh -o moc_VideoWidget.cpp
+g++ -DHAVE_CONFIG_H -I. -I..  -I../libde265 -D_FORTIFY_SOURCE=2 -I/usr/include/qt/QtWidgets -I/usr/include/qt -I/usr/include/qt/QtGui -I/usr/include/qt -I/usr/include/qt/QtCore -I/usr/include/qt -std=c++0x -fPIC   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -MT sherlock265-moc_VideoWidget.o -MD -MP -MF .deps/sherlock265-moc_VideoWidget.Tpo -c -o sherlock265-moc_VideoWidget.o `test -f 'moc_VideoWidget.cpp' || echo './'`moc_VideoWidget.cpp
+mv -f .deps/sherlock265-moc_VideoWidget.Tpo .deps/sherlock265-moc_VideoWidget.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link g++ -I/usr/include/qt/QtWidgets -I/usr/include/qt -I/usr/include/qt/QtGui -I/usr/include/qt -I/usr/include/qt/QtCore -I/usr/include/qt -std=c++0x -fPIC   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -lQt5Widgets -lQt5Gui -lQt5Core  -lswscale -Wl,-O1,--sort-common,--as-needed,-z,relro -o sherlock265 sherlock265-sherlock265.o sherlock265-VideoPlayer.o sherlock265-VideoDecoder.o sherlock265-VideoWidget.o sherlock265-moc_VideoPlayer.o sherlock265-moc_VideoDecoder.o sherlock265-moc_VideoWidget.o ../libde265/libde265.la -lstdc++ -lpthread -lpthread -lm 
+libtool: link: g++ -I/usr/include/qt/QtWidgets -I/usr/include/qt -I/usr/include/qt/QtGui -I/usr/include/qt -I/usr/include/qt/QtCore -I/usr/include/qt -std=c++0x -fPIC -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Werror=return-type -Werror=unused-result -Werror=reorder -std=gnu++11 -DDE265_LOG_ERROR -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -o .libs/sherlock265 sherlock265-sherlock265.o sherlock265-VideoPlayer.o sherlock265-VideoDecoder.o sherlock265-VideoWidget.o sherlock265-moc_VideoPlayer.o sherlock265-moc_VideoDecoder.o sherlock265-moc_VideoWidget.o  -lQt5Widgets -lQt5Gui -lQt5Core -lswscale ../libde265/.libs/libde265.so -lstdc++ -lpthread -lm
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/sherlock265'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2'
+Making install in libde265
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265'
+Making install in encoder
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder'
+Making install in algo
+make[3]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder/algo'
+make[4]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder/algo'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder/algo'
+make[3]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder/algo'
+make[3]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder'
+make[4]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder'
+make[3]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/encoder'
+Making install in x86
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/x86'
+make[3]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/x86'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/x86'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265/x86'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265'
+make[3]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265'
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libde265.la '/home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libde265.so.0.0.10 /home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/lib/libde265.so.0.0.10
+libtool: install: (cd /home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/lib && { ln -s -f libde265.so.0.0.10 libde265.so.0 || { rm -f libde265.so.0 && ln -s libde265.so.0.0.10 libde265.so.0; }; })
+libtool: install: (cd /home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/lib && { ln -s -f libde265.so.0.0.10 libde265.so || { rm -f libde265.so && ln -s libde265.so.0.0.10 libde265.so; }; })
+libtool: install: /usr/bin/install -c .libs/libde265.lai /home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/lib/libde265.la
+libtool: install: /usr/bin/install -c .libs/libde265.a /home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/lib/libde265.a
+libtool: install: chmod 644 /home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/lib/libde265.a
+libtool: install: ranlib /home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/lib/libde265.a
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/include/libde265'
+ /usr/bin/install -c -m 644 de265.h de265-version.h '/home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/include/libde265'
+make[3]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/libde265'
+Making install in dec265
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/dec265'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/dec265'
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c dec265 hdrcopy '/home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin'
+libtool: install: /usr/bin/install -c .libs/dec265 /home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin/dec265
+libtool: install: /usr/bin/install -c .libs/hdrcopy /home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin/hdrcopy
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/dec265'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/dec265'
+Making install in enc265
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/enc265'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/enc265'
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c enc265 '/home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin'
+libtool: install: /usr/bin/install -c .libs/enc265 /home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin/enc265
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/enc265'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/enc265'
+Making install in tools
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/tools'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/tools'
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c gen-enc-table yuv-distortion rd-curves block-rate-estim tests bjoentegaard '/home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin'
+libtool: install: /usr/bin/install -c .libs/gen-enc-table /home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin/gen-enc-table
+libtool: install: /usr/bin/install -c .libs/yuv-distortion /home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin/yuv-distortion
+libtool: install: /usr/bin/install -c .libs/rd-curves /home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin/rd-curves
+libtool: install: /usr/bin/install -c .libs/block-rate-estim /home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin/block-rate-estim
+libtool: install: /usr/bin/install -c .libs/tests /home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin/tests
+libtool: install: /usr/bin/install -c .libs/bjoentegaard /home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin/bjoentegaard
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/tools'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/tools'
+Making install in sherlock265
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/sherlock265'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/sherlock265'
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c sherlock265 '/home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin'
+libtool: install: /usr/bin/install -c .libs/sherlock265 /home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/bin/sherlock265
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/sherlock265'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2/sherlock265'
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libde265.pc '/home/alex/Apricity-OS/apricity-repo/build/libde265/pkg/libde265/usr/lib/pkgconfig'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libde265/src/libde265-1.0.2'
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'build-aux'.
+libtoolize: copying file 'build-aux/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking whether make supports nested variables... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for glib-mkenums... /usr/bin/glib-mkenums
+checking for glib-genmarshal... /usr/bin/glib-genmarshal
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for cos in -lm... yes
+checking for LIBTIMEZONEMAP... yes
+checking for gobject-introspection... yes
+checking for pkg-config... (cached) /usr/bin/pkg-config
+checking pkg-config is at least version 0.16... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/timezonemap.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure:
+
+Timezone Map Configuration:
+
+	Prefix:        /usr
+
+make  all-recursive
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/src/libtimezonemap-0.4.1'
+Making all in src
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/src/libtimezonemap-0.4.1/src'
+  CC       cc-timezone-map.lo
+  CC       timezone-completion.lo
+  CC       tz.lo
+  CCLD     libtimezonemap.la
+  CC       test_timezone-test-timezone.o
+  CC       test_timezone-tz.o
+  CCLD     test-timezone
+  GISCAN   TimezoneMap-1.0.gir
+g-ir-scanner: TimezoneMap: warning: 17 warnings suppressed (use --warn-all to see them)
+  GICOMP   TimezoneMap-1.0.gir
+TZ_DATA_FILE=./data/cities15000.txt ADMIN1_FILE=./data/admin1Codes.txt COUNTRY_FILE=./data/countryInfo.txt \
+			 ./test-timezone ./data || :
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/src/libtimezonemap-0.4.1/src'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/src/libtimezonemap-0.4.1'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/src/libtimezonemap-0.4.1'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/src/libtimezonemap-0.4.1'
+Making install in src
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/src/libtimezonemap-0.4.1/src'
+TZ_DATA_FILE=./data/cities15000.txt ADMIN1_FILE=./data/admin1Codes.txt COUNTRY_FILE=./data/countryInfo.txt \
+			 ./test-timezone ./data || :
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/src/libtimezonemap-0.4.1/src'
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libtimezonemap.la '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/lib'
+libtool: install: /usr/bin/install -c .libs/libtimezonemap.so.1.0.0 /home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/lib/libtimezonemap.so.1.0.0
+libtool: install: (cd /home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/lib && { ln -s -f libtimezonemap.so.1.0.0 libtimezonemap.so.1 || { rm -f libtimezonemap.so.1 && ln -s libtimezonemap.so.1.0.0 libtimezonemap.so.1; }; })
+libtool: install: (cd /home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/lib && { ln -s -f libtimezonemap.so.1.0.0 libtimezonemap.so || { rm -f libtimezonemap.so && ln -s libtimezonemap.so.1.0.0 libtimezonemap.so; }; })
+libtool: install: /usr/bin/install -c .libs/libtimezonemap.lai /home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/lib/libtimezonemap.la
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 timezonemap.pc '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/share/libtimezonemap/'
+ /usr/bin/install -c -m 644 backward '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/share/libtimezonemap/'
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/share/libtimezonemap/ui'
+ /usr/bin/install -c -m 644 data/bg.png data/cc.png data/olsen_map.png data/pin.png data/timezone_0.png data/timezone_-10.png data/timezone_10.png data/timezone_10.5.png data/timezone_-1.png data/timezone_1.png data/timezone_-11.png data/timezone_11.png data/timezone_11.5.png data/timezone_12.png data/timezone_12.75.png data/timezone_13.png data/timezone_-2.png data/timezone_2.png data/timezone_-3.png data/timezone_3.png data/timezone_-3.5.png data/timezone_3.5.png data/timezone_-4.png data/timezone_4.png data/timezone_-4.5.png data/timezone_4.5.png data/timezone_-5.png data/timezone_5.png data/timezone_-5.5.png data/timezone_5.5.png data/timezone_5.75.png data/timezone_-6.png data/timezone_6.png data/timezone_6.5.png data/timezone_-7.png data/timezone_7.png data/timezone_-8.png data/timezone_8.png data/timezone_-9.png data/timezone_9.png '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/share/libtimezonemap/ui'
+ /usr/bin/install -c -m 644 data/timezone_-9.5.png data/timezone_9.5.png data/cities15000.txt data/admin1Codes.txt data/countryInfo.txt '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/share/libtimezonemap/ui'
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/share/gir-1.0'
+ /usr/bin/install -c -m 644 TimezoneMap-1.0.gir '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/share/gir-1.0'
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/include/timezonemap/timezonemap'
+ /usr/bin/install -c -m 644 cc-timezone-map.h timezone-completion.h tz.h '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/include/timezonemap/timezonemap'
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/lib/girepository-1.0'
+ /usr/bin/install -c -m 644 TimezoneMap-1.0.typelib '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/pkg/libtimezonemap//usr/lib/girepository-1.0'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/src/libtimezonemap-0.4.1/src'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/src/libtimezonemap-0.4.1/src'
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/src/libtimezonemap-0.4.1'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/src/libtimezonemap-0.4.1'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/src/libtimezonemap-0.4.1'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/libtimezonemap/src/libtimezonemap-0.4.1'
+libtoolize: putting auxiliary files in '.'.
+libtoolize: linking file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: linking file 'm4/libtool.m4'
+libtoolize: linking file 'm4/ltoptions.m4'
+libtoolize: linking file 'm4/ltsugar.m4'
+libtoolize: linking file 'm4/ltversion.m4'
+libtoolize: linking file 'm4/lt~obsolete.m4'
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking ctype.h usability... yes
+checking ctype.h presence... yes
+checking for ctype.h... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking glob.h usability... yes
+checking glob.h presence... yes
+checking for glob.h... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking regex.h usability... yes
+checking regex.h presence... yes
+checking for regex.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/utsname.h usability... yes
+checking sys/utsname.h presence... yes
+checking for sys/utsname.h... yes
+checking for alpm_version in -lalpm... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for alpm... yes
+checking for yajl_free in -lyajl... yes
+checking for gawk... (cached) gawk
+checking for curl-config... /usr/bin/curl-config
+checking for the version of libcurl... 7.48.0
+checking for libcurl >= version 7.19.4... yes
+checking whether libcurl is usable... yes
+checking for curl_free... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by gcc... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for git... git
+checking for .git/... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating src/Makefile
+config.status: creating doc/Makefile
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+
+package-query:
+
+  Build information:
+    source code location   : .
+    prefix                 : /usr
+    sysconfdir             : /etc
+       conf file           : /etc/pacman.conf
+    localstatedir          : /var
+       database dir        : /var/lib/pacman/
+    compiler               : gcc
+    compiler flags         : -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong
+
+    package-query version  : 1.8
+    using git version      : yes
+       git ver             : 1.8-60-g3e78
+
+  Variable information:
+    root working directory : /
+    aur base url           : https://aur.archlinux.org
+
+(CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/sh /home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query/missing autoheader)
+rm -f stamp-h1
+touch config.h.in
+cd . && /bin/sh ./config.status config.h
+config.status: creating config.h
+config.status: config.h is unchanged
+make  all-recursive
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query'
+Making all in src
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query/src'
+gcc -DLOCALEDIR=\"/usr/share/locale\" -DCONFFILE=\"/etc/pacman.conf\" -DROOTDIR=\"/\" -DDBPATH=\"/var/lib/pacman/\" -DAUR_BASE_URL=\"https://aur.archlinux.org\" -DHAVE_CONFIG_H -DGIT_VERSION=\"1.8-60-g3e78\" -I. -I..   -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -MT aur.o -MD -MP -MF .deps/aur.Tpo -c -o aur.o aur.c
+mv -f .deps/aur.Tpo .deps/aur.Po
+gcc -DLOCALEDIR=\"/usr/share/locale\" -DCONFFILE=\"/etc/pacman.conf\" -DROOTDIR=\"/\" -DDBPATH=\"/var/lib/pacman/\" -DAUR_BASE_URL=\"https://aur.archlinux.org\" -DHAVE_CONFIG_H -DGIT_VERSION=\"1.8-60-g3e78\" -I. -I..   -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -MT alpm-query.o -MD -MP -MF .deps/alpm-query.Tpo -c -o alpm-query.o alpm-query.c
+mv -f .deps/alpm-query.Tpo .deps/alpm-query.Po
+gcc -DLOCALEDIR=\"/usr/share/locale\" -DCONFFILE=\"/etc/pacman.conf\" -DROOTDIR=\"/\" -DDBPATH=\"/var/lib/pacman/\" -DAUR_BASE_URL=\"https://aur.archlinux.org\" -DHAVE_CONFIG_H -DGIT_VERSION=\"1.8-60-g3e78\" -I. -I..   -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -MT util.o -MD -MP -MF .deps/util.Tpo -c -o util.o util.c
+mv -f .deps/util.Tpo .deps/util.Po
+gcc -DLOCALEDIR=\"/usr/share/locale\" -DCONFFILE=\"/etc/pacman.conf\" -DROOTDIR=\"/\" -DDBPATH=\"/var/lib/pacman/\" -DAUR_BASE_URL=\"https://aur.archlinux.org\" -DHAVE_CONFIG_H -DGIT_VERSION=\"1.8-60-g3e78\" -I. -I..   -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -MT color.o -MD -MP -MF .deps/color.Tpo -c -o color.o color.c
+mv -f .deps/color.Tpo .deps/color.Po
+gcc -DLOCALEDIR=\"/usr/share/locale\" -DCONFFILE=\"/etc/pacman.conf\" -DROOTDIR=\"/\" -DDBPATH=\"/var/lib/pacman/\" -DAUR_BASE_URL=\"https://aur.archlinux.org\" -DHAVE_CONFIG_H -DGIT_VERSION=\"1.8-60-g3e78\" -I. -I..   -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -MT package-query.o -MD -MP -MF .deps/package-query.Tpo -c -o package-query.o package-query.c
+mv -f .deps/package-query.Tpo .deps/package-query.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -D_GNU_SOURCE -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -lcurl  -Wl,-O1,--sort-common,--as-needed,-z,relro -o package-query aur.o alpm-query.o util.o color.o package-query.o  -lyajl -lalpm 
+libtool: link: gcc -D_GNU_SOURCE -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -o package-query aur.o alpm-query.o util.o color.o package-query.o  -lcurl -lyajl -lalpm
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query/src'
+Making all in doc
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query/doc'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query'
+Making install in src
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query/src'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query/src'
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/pkg/package-query-git/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c package-query '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/pkg/package-query-git/usr/bin'
+libtool: install: /usr/bin/install -c package-query /home/alex/Apricity-OS/apricity-repo/build/package-query-git/pkg/package-query-git/usr/bin/package-query
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query/src'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query/src'
+Making install in doc
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query/doc'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/pkg/package-query-git/usr/share/man/man8'
+ /usr/bin/install -c -m 644 package-query.8 '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/pkg/package-query-git/usr/share/man/man8'
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query/doc'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query/doc'
+make[1]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query'
+make[2]: Entering directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query'
+make[1]: Leaving directory '/home/alex/Apricity-OS/apricity-repo/build/package-query-git/src/package-query'
+patching file package.json
+patching file spec/atom-environment-spec.coffee
+patching file spec/module-cache-spec.coffee
+patching file spec/window-event-handler-spec.coffee
+Hunk #1 succeeded at 75 with fuzz 2.
+patching file src/module-cache.coffee
+Node: v5.10.1
+npm: v3.8.6
+Installing build modules...
+=> Took 137350ms.
+
+Installing apm...
+=> Took 59588ms.
+
+Deleting old packages...
+=> Took 348ms.
+
+Installing modules 
