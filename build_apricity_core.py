@@ -18,7 +18,7 @@ def get_packages():
                        'pamac-aur', 'pam_encfs', 'plymouth',
                        'polkit-gnome-gtk2', 'pyparted-git',
                        'python2-powerline-git', 'python-beautifulsoup4',
-                       'python-parted', 'sbackup', 'telegram-desktop-bin',
+                       'sbackup', 'telegram-desktop-bin',
                        'ttf-ms-fonts', 'v86d', 'vte3-notification',
                        'vte3-notification-common', 'wine', 'wine-silverlight',
                        'yaourt-git']
