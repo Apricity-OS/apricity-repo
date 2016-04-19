@@ -23,7 +23,7 @@ class YaourtPackage():
         if verbose:
             call(['pacaur', '-ay', '--noedit', '--noconfirm', '--needed', self.name])
         else:
-            call(['pacaur', '-ay', '--noedit', '--noconfirm', '--needed', self.name], stdout=open(devnull, 'w'))
+            call(['pacaur', '-ay', '--noedit', '--silent', '--noconfirm', '--needed', self.name], stdout=open(devnull, 'w'))
 
 
 class ApricityPackage():
