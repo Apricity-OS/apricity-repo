@@ -21,9 +21,9 @@ class YaourtPackage():
 
     def install_makedeps(self, verbose=True):
         if verbose:
-            call(['pacaur', '-ay', '--noedit', '--noconfirm', self.name])
+            call(['pacaur', '-ay', '--noedit', '--noconfirm', '--needed', self.name])
         else:
-            call(['pacaur', '-ay', '--noedit', '--noconfirm', self.name], stdout=open(devnull, 'w'))
+            call(['pacaur', '-ay', '--noedit', '--noconfirm', '--needed', self.name], stdout=open(devnull, 'w'))
 
 
 class ApricityPackage():
