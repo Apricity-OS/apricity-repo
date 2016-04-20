@@ -15,9 +15,9 @@ class YaourtPackage():
                 call(['yaourt', '-G', self.name], stdout=open(devnull, 'w'))
             with cd(self.name):
                 if verbose:
-                    call('makepkg')
+                    call(['makepkg', '--syncdeps'])
                 else:
-                    call('makepkg', stdout=open(devnull, 'w'))
+                    call(['makepkg', '--syncdeps'], stdout=open(devnull, 'w'))
 
     def install_makedeps(self, verbose=True):
         if verbose:
@@ -36,9 +36,9 @@ class ApricityPackage():
             with cd(self.name):
                 make_tarfile(self.name + '.tar.gz', 'src/' + self.name)
                 if verbose:
-                    call('makepkg')
+                    call(['makepkg', '--syncdeps'])
                 else:
-                    call('makepkg', stdout=open(devnull, 'w'))
+                    call(['makepkg', '--syncdeps'], stdout=open(devnull, 'w'))
 
     def install_makedeps(self, verbose=True):
         pass
