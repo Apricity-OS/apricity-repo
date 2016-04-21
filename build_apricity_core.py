@@ -1,5 +1,5 @@
 from subprocess import call, CalledProcessError
-from os import mkdir
+from os import mkdir, chmod
 from shutil import copy, rmtree
 from glob import glob
 from lib import cd
@@ -36,10 +36,12 @@ def get_packages():
 
 def clean():
     try:
+        call(['chmod', '-R', '755', 'build'])
         rmtree('build')
     except Exception as e:
         print(e)
     try:
+        call(['chmod', '-R', '755', 'core'])
         rmtree('core')
     except Exception as e:
         print(e)
