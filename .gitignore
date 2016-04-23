@@ -2,3 +2,4 @@ build
 core
 repo
 __pycache__
+*.log

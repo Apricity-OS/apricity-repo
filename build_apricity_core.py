@@ -1,5 +1,5 @@
-from subprocess import call, CalledProcessError
-from os import mkdir, chmod
+from subprocess import call
+from os import mkdir
 from shutil import copy, rmtree
 from glob import glob
 from lib import cd
@@ -20,12 +20,12 @@ def get_packages():
                        'python2-powerline-git', 'python-beautifulsoup4',
                        'sbackup', 'telegram-desktop-bin',
                        'ttf-ms-fonts', 'v86d',  # 'vte3-notification',
-                       'wine', 'wine-silverlight',
+                       # 'wine', 'wine-silverlight',
                        'yaourt-git']
     apricity_packages = ['apricityassets', 'apricity-vim', 'ice-ssb',
                          'calamares', 'apricity-wallpapers',
                          'apricity-themes-gnome', 'apricity-themes-cinnamon',
-                         'apricity-icons', 'apricity-chrome-profile']
+                         'apricity-icons']
     packages = []
     for package_name in yaourt_packages:
         packages.append(YaourtPackage(package_name))
@@ -48,10 +48,10 @@ def clean():
 
 
 def sync_core():
-    call(['rsync', '-aP', 'core', 'apricity@apricityos.com/public_html/apricity-core'])
+    call(['rsync', '-aP', 'core/', 'apricity@apricityos.com:public_html/apricity-core'])
 
 
-def build_core(packages, install_makedeps=True, verbose=True, max_attempts=5):
+def build_core(packages, install_makedeps=True, verbose=True, max_attempts=10):
     build_dir = 'build'
     repo_dir = 'core'
     mkdir(build_dir)
