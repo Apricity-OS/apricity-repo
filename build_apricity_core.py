@@ -48,7 +48,8 @@ def clean():
 
 
 def sync_core():
-    call(['rsync', '-aP', 'core/', 'apricity@apricityos.com:public_html/apricity-core'])
+    call(['rsync', '-aP', '--exclude="apricity-core*"', 'core/', 'apricity@apricityos.com:public_html/apricity-core'])
+    call(['rsync', '-aP', 'core/apricity-core*', 'apricity@apricityos.com:public_html/apricity-core'])
 
 
 def build_core(packages, install_makedeps=True, verbose=True, max_attempts=10):
