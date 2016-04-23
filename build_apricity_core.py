@@ -48,7 +48,7 @@ def clean():
 
 
 def sync_core():
-    call(['rsync', '-aP', '--exclude="apricity-core*"', 'core/', 'apricity@apricityos.com:public_html/apricity-core'])
+    call(['rsync', '-aP', '--exclude="apricity-core*"', '--ignore-existing', 'core/', 'apricity@apricityos.com:public_html/apricity-core'])
     call(['rsync', '-aP', '--exclude="*.pkg.tar.xz"', 'core/', 'apricity@apricityos.com:public_html/apricity-core'])
 
 
