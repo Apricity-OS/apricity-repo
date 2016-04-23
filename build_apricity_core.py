@@ -1,6 +1,6 @@
 from subprocess import call
 from os import mkdir
-from shutil import copy, rmtree
+from shutil import copy, copytree, rmtree
 from glob import glob
 from lib import cd
 from packages import YaourtPackage, ApricityPackage
@@ -41,6 +41,8 @@ def clean():
     except Exception as e:
         print(e)
     try:
+        rmtree('core-backup')
+        copytree('core', 'core-backup')
         call(['chmod', '-R', '755', 'core'])
         rmtree('core')
     except Exception as e:
@@ -48,8 +50,8 @@ def clean():
 
 
 def sync_core():
-    call(['rsync', '-aP', '--exclude="apricity-core*"', '--ignore-existing', 'core/', 'apricity@apricityos.com:public_html/apricity-core'])
-    call(['rsync', '-aP', '--exclude="*.pkg.tar.xz"', 'core/', 'apricity@apricityos.com:public_html/apricity-core'])
+    call('rsync -aP --exclude="apricity-core*" --ignore-existing core/ apricity@apricityos.com:public_html/apricity-core', shell=True)
+    call('rsync -aP --exclude="*.pkg.tar.xz" core/ apricity@apricityos.com:public_html/apricity-core', shell=True)
 
 
 def build_core(packages, install_makedeps=True, verbose=True, max_attempts=10):
