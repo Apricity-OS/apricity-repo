@@ -1,4 +1,4 @@
-from subprocess import call
+from subprocess import call, check_call
 from os import mkdir
 from shutil import copy, copytree, rmtree
 from glob import glob
@@ -7,7 +7,7 @@ from packages import YaourtPackage, ApricityPackage
 from argparse import ArgumentParser
 
 
-def get_packages():
+def get_packages(yaourt_spot_fix='', apricity_spot_fix=''):
     yaourt_packages = ['broadcom-wl', 'broadcom-wl-dkms', 'btsync',
                        'btsync-gui', 'cower', 'expac-git',
                        'firefox-extension-shumway', 'google-chrome',
@@ -22,10 +22,21 @@ def get_packages():
                        'ttf-ms-fonts', 'v86d',  # 'vte3-notification',
                        # 'wine', 'wine-silverlight',
                        'yaourt-git']
+    # yaourt_packages = ['yaourt-git']
     apricity_packages = ['apricityassets', 'apricity-vim', 'ice-ssb',
                          'calamares', 'apricity-wallpapers',
                          'apricity-themes-gnome', 'apricity-themes-cinnamon',
-                         'apricity-icons']
+                         'apricity-icons', 'apricity-keyring']
+    # apricity_packages = ['apricityassets']
+    if len(yaourt_spot_fix) > 0 and len(apricity_spot_fix) == 0:
+        yaourt_packages = [yaourt_spot_fix]
+        apricity_packages = []
+    elif len(yaourt_spot_fix) == 0 and len(apricity_spot_fix) > 0:
+        apricity_packages = [apricity_spot_fix]
+        yaourt_packages = []
+    elif len(yaourt_spot_fix) > 0 and len(apricity_spot_fix) > 0:
+        apricity_packages = [apricity_spot_fix]
+        yaourt_packages = [yaourt_spot_fix]
     packages = []
     for package_name in yaourt_packages:
         packages.append(YaourtPackage(package_name))
@@ -42,6 +53,9 @@ def clean():
         print(e)
     try:
         rmtree('core-backup')
+    except Exception as e:
+        print(e)
+    try:
         copytree('core', 'core-backup')
         call(['chmod', '-R', '755', 'core'])
         rmtree('core')
@@ -49,16 +63,49 @@ def clean():
         print(e)
 
 
-def sync_core():
-    call('rsync -aP --exclude="apricity-core*" --ignore-existing core/ apricity@apricityos.com:public_html/apricity-core', shell=True)
-    call('rsync -aP --exclude="*.pkg.tar.xz" core/ apricity@apricityos.com:public_html/apricity-core', shell=True)
+def sync_core(signed=False, max_attempts=10):
+    if signed:
+        dest = 'apricity-core-signed'
+    else:
+        dest = 'apricity-core'
+    attempts = 0
+    while attempts < max_attempts:
+        try:
+            check_call('rsync -aP --exclude="apricity-core*" --checksum core/ \
+                       apricity@apricityos.com:public_html/' + dest, shell=True)
+            break
+        except:
+            attempts += 1
+    attempts = 0
+    while attempts < max_attempts:
+        try:
+            check_call('rsync -aP core/apricity-core.db.tar.gz --ignore-times \
+                       core/apricity-core.db \
+                       core/apricity-core.files \
+                       core/apricity-core.files.tar.gz \
+                       apricity@apricityos.com:public_html/' + dest,
+                       shell=True)
+            break
+        except:
+            attempts += 1
 
 
-def build_core(packages, install_makedeps=True, verbose=True, max_attempts=10):
-    build_dir = 'build'
-    repo_dir = 'core'
+def prepare(build_dir, repo_dir):
     mkdir(build_dir)
     mkdir(repo_dir)
+    check_call('rsync -aP \
+               apricity@apricityos.com:public_html/apricity-core/apricity-core.db.tar.gz \
+               apricity@apricityos.com:public_html/apricity-core/apricity-core.db \
+               apricity@apricityos.com:public_html/apricity-core/apricity-core.files.tar.gz \
+               apricity@apricityos.com:public_html/apricity-core/apricity-core.files \
+               core',
+               shell=True)
+
+
+def build_core(packages, install_makedeps=True, verbose=True, max_attempts=10, signed=False):
+    build_dir = 'build'
+    repo_dir = 'core'
+    prepare(build_dir, repo_dir)
     failed = []
     for package in packages:
         attempts = 0
@@ -66,8 +113,8 @@ def build_core(packages, install_makedeps=True, verbose=True, max_attempts=10):
             try:
                 if install_makedeps:
                     package.install_makedeps(verbose=verbose)
-                package.build(build_dir, verbose=verbose)
-                pkgs = glob(build_dir + '/' + package.name + '/*.pkg.tar.xz')
+                package.build(build_dir, verbose=verbose, signed=signed)
+                pkgs = glob(build_dir + '/' + package.name + '/*.pkg.tar.xz*')
                 if len(pkgs) > 0:
                     for file in pkgs:
                         copy(file, repo_dir)
@@ -83,7 +130,10 @@ def build_core(packages, install_makedeps=True, verbose=True, max_attempts=10):
                 else:
                     failed.append(package.name)
     with cd(repo_dir):
-        call('repo-add apricity-core.db.tar.gz *.pkg.tar.xz', shell=True)
+        if signed:
+            call('repo-add --sign apricity-core.db.tar.gz *.pkg.tar.xz', shell=True)
+        else:
+            call('repo-add apricity-core.db.tar.gz *.pkg.tar.xz', shell=True)
     return failed
 
 
@@ -95,6 +145,15 @@ def get_args():
     parser.add_argument('-v', '--verbose',
                         help='increase verbosity',
                         action='store_true')
+    parser.add_argument('-s', '--signed',
+                        help='sign packages',
+                        action='store_true')
+    parser.add_argument('-a', '--apricity_spot_fix',
+                        default='',
+                        help='only update a single apricity package')
+    parser.add_argument('-y', '--aur_spot_fix',
+                        default='',
+                        help='only update a single AUR package')
     args = parser.parse_args()
     return args
 
@@ -104,11 +163,13 @@ def main():
     print('Verbosity: ' + str(args.verbose))
     with cd('~/Apricity-OS/apricity-repo'):
         clean()
-        packages = get_packages()
+        packages = get_packages(yaourt_spot_fix=args.aur_spot_fix,
+                                apricity_spot_fix=args.apricity_spot_fix)
         failed_packages = build_core(packages,
                                      install_makedeps=args.install_makedeps,
-                                     verbose=args.verbose)
-        sync_core()
+                                     verbose=args.verbose,
+                                     signed=args.signed)
+        sync_core(args.signed)
         if len(failed_packages) > 0:
             print('Failed packages:')
             for package_name in failed_packages:

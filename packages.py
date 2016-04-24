@@ -7,7 +7,11 @@ class YaourtPackage():
     def __init__(self, name):
         self.name = name
 
-    def build(self, build, verbose=True):
+    def build(self, build, verbose=True, signed=False):
+        if signed:
+            sign_str = '--sign'
+        else:
+            sign_str = '--nosign'
         with cd(build):
             if verbose:
                 call(['yaourt', '-G', self.name])
@@ -15,9 +19,9 @@ class YaourtPackage():
                 call(['yaourt', '-G', self.name], stdout=open(devnull, 'w'))
             with cd(self.name):
                 if verbose:
-                    call(['makepkg', '--syncdeps'])
+                    call(['makepkg', sign_str, '--syncdeps'])
                 else:
-                    call(['makepkg', '--syncdeps'], stdout=open(devnull, 'w'))
+                    call(['makepkg', sign_str, '--syncdeps'], stdout=open(devnull, 'w'))
 
     def install_makedeps(self, verbose=True):
         if verbose:
@@ -30,15 +34,19 @@ class ApricityPackage():
     def __init__(self, name):
         self.name = name
 
-    def build(self, build, verbose=True):
+    def build(self, build, verbose=True, signed=False):
+        if signed:
+            sign_str = '--sign'
+        else:
+            sign_str = '--nosign'
         with cd(build):
             call(['git', 'clone', 'https://github.com/Apricity-OS/' + self.name + '.git'])
             with cd(self.name):
                 make_tarfile(self.name + '.tar.gz', 'src/' + self.name)
                 if verbose:
-                    call(['makepkg', '--syncdeps'])
+                    call(['makepkg', sign_str, '--syncdeps'])
                 else:
-                    call(['makepkg', '--syncdeps'], stdout=open(devnull, 'w'))
+                    call(['makepkg', sign_str, '--syncdeps'], stdout=open(devnull, 'w'))
 
     def install_makedeps(self, verbose=True):
         pass
