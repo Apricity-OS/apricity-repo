@@ -79,10 +79,10 @@ def sync_core(signed=False, max_attempts=10):
     attempts = 0
     while attempts < max_attempts:
         try:
-            check_call('rsync -aP core/apricity-core.db.tar.gz --ignore-times \
-                       core/apricity-core.db \
-                       core/apricity-core.files \
-                       core/apricity-core.files.tar.gz \
+            check_call('rsync -aP core/apricity-core.db.tar.gz* --ignore-times \
+                       core/apricity-core.db* \
+                       core/apricity-core.files* \
+                       core/apricity-core.files.tar.gz* \
                        apricity@apricityos.com:public_html/' + dest,
                        shell=True)
             break
@@ -90,16 +90,22 @@ def sync_core(signed=False, max_attempts=10):
             attempts += 1
 
 
-def prepare(build_dir, repo_dir):
+def prepare(build_dir, repo_dir, max_attempts=10):
     mkdir(build_dir)
     mkdir(repo_dir)
-    check_call('rsync -aP \
-               apricity@apricityos.com:public_html/apricity-core/apricity-core.db.tar.gz \
-               apricity@apricityos.com:public_html/apricity-core/apricity-core.db \
-               apricity@apricityos.com:public_html/apricity-core/apricity-core.files.tar.gz \
-               apricity@apricityos.com:public_html/apricity-core/apricity-core.files \
-               core',
-               shell=True)
+    attempts = 0
+    while attempts < max_attempts:
+        try:
+            check_call('rsync -aP \
+                       apricity@apricityos.com:public_html/apricity-core/apricity-core.db.tar.gz \
+                       apricity@apricityos.com:public_html/apricity-core/apricity-core.db \
+                       apricity@apricityos.com:public_html/apricity-core/apricity-core.files.tar.gz \
+                       apricity@apricityos.com:public_html/apricity-core/apricity-core.files \
+                       core',
+                       shell=True)
+            break
+        except:
+            attempts += 1
 
 
 def build_core(packages, install_makedeps=True, verbose=True, max_attempts=10, signed=False):
@@ -114,12 +120,18 @@ def build_core(packages, install_makedeps=True, verbose=True, max_attempts=10, s
                 if install_makedeps:
                     package.install_makedeps(verbose=verbose)
                 package.build(build_dir, verbose=verbose, signed=signed)
-                pkgs = glob(build_dir + '/' + package.name + '/*.pkg.tar.xz*')
+                pkgs = glob(build_dir + '/' + package.name + '/*.pkg.tar.xz')
                 if len(pkgs) > 0:
                     for file in pkgs:
                         copy(file, repo_dir)
                 else:
                     raise Exception('Makepkg failed')
+                sigs = glob(build_dir + '/' + package.name + '/*.pkg.tar.xz.sig')
+                if len(sigs) > 0:
+                    for file in pkgs:
+                        copy(file, repo_dir)
+                else:
+                    raise Exception('Makepkg signing failed')
                 break
             except Exception as e:
                 print('Unexpected Error:' + str(e))
