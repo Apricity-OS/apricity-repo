@@ -126,12 +126,13 @@ def build_core(packages, install_makedeps=True, verbose=True, max_attempts=10, s
                         copy(file, repo_dir)
                 else:
                     raise Exception('Makepkg failed')
-                sigs = glob(build_dir + '/' + package.name + '/*.pkg.tar.xz.sig')
-                if len(sigs) > 0:
-                    for file in pkgs:
-                        copy(file, repo_dir)
-                else:
-                    raise Exception('Makepkg signing failed')
+                if signed:
+	            sigs = glob(build_dir + '/' + package.name + '/*.pkg.tar.xz.sig')
+	            if len(sigs) > 0:
+	                for file in pkgs:
+	                    copy(file, repo_dir)
+	            else:
+	                raise Exception('Makepkg signing failed')
                 break
             except Exception as e:
                 print('Unexpected Error:' + str(e))
