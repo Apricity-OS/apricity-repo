@@ -1,5 +1,10 @@
 build
+build-dev
+build-signed
 core
+core-dev
+core-signed
 core-backup
 repo
 __pycache__
+.*.swp

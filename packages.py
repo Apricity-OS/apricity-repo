@@ -1,13 +1,14 @@
-from lib import cd, make_tarfile
+from lib import cd
 from subprocess import call
-from os import devnull
+from os import devnull, mkdir
+from shutil import copytree, rmtree
 
 
 class YaourtPackage():
     def __init__(self, name):
         self.name = name
 
-    def build(self, build, verbose=True, signed=False):
+    def build(self, build, verbose=True, signed=False, dev=False):
         if signed:
             sign_str = '--sign'
         else:
@@ -34,15 +35,22 @@ class ApricityPackage():
     def __init__(self, name):
         self.name = name
 
-    def build(self, build, verbose=True, signed=False):
+    def build(self, build, verbose=True, signed=False, dev=False):
         if signed:
             sign_str = '--sign'
         else:
             sign_str = '--nosign'
+        if dev:
+            dev_str = '-dev'
+        else:
+            dev_str = ''
         with cd(build):
-            call(['git', 'clone', 'https://github.com/Apricity-OS/' + self.name + '.git'])
+            mkdir(self.name + '-clone')
+            with cd(self.name + '-clone'):
+                call(['git', 'clone', 'https://github.com/Apricity-OS/apricity-packages' + dev_str])
+                copytree('apricity-packages' + dev_str + '/' + self.name, '../' + self.name)
+            rmtree(self.name + '-clone')
             with cd(self.name):
-                make_tarfile(self.name + '.tar.gz', 'src/' + self.name)
                 if verbose:
                     call(['makepkg', sign_str, '--syncdeps'])
                 else:

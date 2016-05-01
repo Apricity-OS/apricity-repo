@@ -1,6 +1,6 @@
 from subprocess import call, check_call
 from os import mkdir
-from shutil import copy, copytree, rmtree
+from shutil import copy, rmtree
 from glob import glob
 from lib import cd
 from packages import YaourtPackage, ApricityPackage
@@ -22,12 +22,12 @@ def get_packages(yaourt_spot_fix='', apricity_spot_fix=''):
                        'ttf-ms-fonts', 'v86d',  # 'vte3-notification',
                        # 'wine', 'wine-silverlight',
                        'yaourt-git']
-    # yaourt_packages = ['yaourt-git']
+    # yaourt_packages = ['broadcom-wl-dkms', 'kpmcore-git', 'google-chrome', 'pamac-aur', 'yaourt-git', 'python2-powerline-git']
     apricity_packages = ['apricityassets', 'apricity-vim', 'ice-ssb',
                          'calamares', 'apricity-wallpapers',
                          'apricity-themes-gnome', 'apricity-themes-cinnamon',
                          'apricity-icons', 'apricity-keyring']
-    # apricity_packages = ['apricityassets']
+    # apricity_packages = ['calamares']
     if len(yaourt_spot_fix) > 0 and len(apricity_spot_fix) == 0:
         yaourt_packages = [yaourt_spot_fix]
         apricity_packages = []
@@ -45,33 +45,20 @@ def get_packages(yaourt_spot_fix='', apricity_spot_fix=''):
     return packages
 
 
-def clean():
-    try:
-        call(['chmod', '-R', '755', 'build'])
-        rmtree('build')
-    except Exception as e:
-        print(e)
-    try:
-        rmtree('core-backup')
-    except Exception as e:
-        print(e)
-    try:
-        copytree('core', 'core-backup')
-        call(['chmod', '-R', '755', 'core'])
-        rmtree('core')
-    except Exception as e:
-        print(e)
+def clean(folders):
+    for folder in folders:
+        try:
+            call(['chmod', '-R', '755', folder])
+            rmtree(folder)
+        except Exception as e:
+            print(e)
 
 
-def sync_core(signed=False, max_attempts=10):
-    if signed:
-        dest = 'apricity-core-signed'
-    else:
-        dest = 'apricity-core'
+def sync_repo(repo_name, repo_dir, dest, max_attempts=10):
     attempts = 0
     while attempts < max_attempts:
         try:
-            check_call('rsync -aP --exclude="apricity-core*" --checksum core/ \
+            check_call('rsync -aP --exclude="apricity-core*" --checksum ' + repo_dir + '/ \
                        apricity@apricityos.com:public_html/' + dest, shell=True)
             break
         except:
@@ -79,10 +66,8 @@ def sync_core(signed=False, max_attempts=10):
     attempts = 0
     while attempts < max_attempts:
         try:
-            check_call('rsync -aP core/apricity-core.db.tar.gz* --ignore-times \
-                       core/apricity-core.db* \
-                       core/apricity-core.files* \
-                       core/apricity-core.files.tar.gz* \
+            check_call('rsync -aP --ignore-times ' + repo_dir + '/' + repo_name + '.db* ' +
+                       repo_dir + '/' + repo_name + '.files* \
                        apricity@apricityos.com:public_html/' + dest,
                        shell=True)
             break
@@ -90,36 +75,45 @@ def sync_core(signed=False, max_attempts=10):
             attempts += 1
 
 
-def prepare(build_dir, repo_dir, max_attempts=10):
+def sync_core_nonsigned():
+    sync_repo('apricity-core', 'core', 'apricity-core')
+
+
+def sync_core_signed():
+    sync_repo('apricity-core', 'core-signed', 'apricity-core-signed')
+
+
+def sync_core_dev():
+    sync_repo('apricity-core-dev', 'core-dev', 'apricity-core-dev')
+
+
+def prepare(dest_dir, repo_name, build_dir, repo_dir, max_attempts=10):
+    clean([build_dir, repo_dir])
     mkdir(build_dir)
     mkdir(repo_dir)
     attempts = 0
     while attempts < max_attempts:
         try:
             check_call('rsync -aP \
-                       apricity@apricityos.com:public_html/apricity-core/apricity-core.db.tar.gz \
-                       apricity@apricityos.com:public_html/apricity-core/apricity-core.db \
-                       apricity@apricityos.com:public_html/apricity-core/apricity-core.files.tar.gz \
-                       apricity@apricityos.com:public_html/apricity-core/apricity-core.files \
-                       core',
+                       apricity@apricityos.com:public_html/' + dest_dir + '/' + repo_name + '.db* \
+                       apricity@apricityos.com:public_html/' + dest_dir + '/' + repo_name + '.files* ' +
+                       repo_dir,
                        shell=True)
             break
         except:
             attempts += 1
 
 
-def build_core(packages, install_makedeps=True, verbose=True, max_attempts=10, signed=False):
-    build_dir = 'build'
-    repo_dir = 'core'
-    prepare(build_dir, repo_dir)
+def build_repo(packages, install_makedeps=True, max_attempts=10, signed=False, dest_dir='apricity-core', repo_name='apricity-core', build_dir='build', repo_dir='repo', dev=False):
+    prepare(dest_dir, repo_name, build_dir, repo_dir)
     failed = []
     for package in packages:
         attempts = 0
         while attempts < max_attempts:
             try:
                 if install_makedeps:
-                    package.install_makedeps(verbose=verbose)
-                package.build(build_dir, verbose=verbose, signed=signed)
+                    package.install_makedeps(verbose=True)
+                package.build(build_dir, verbose=True, signed=signed, dev=dev)
                 pkgs = glob(build_dir + '/' + package.name + '/*.pkg.tar.xz')
                 if len(pkgs) > 0:
                     for file in pkgs:
@@ -127,27 +121,39 @@ def build_core(packages, install_makedeps=True, verbose=True, max_attempts=10, s
                 else:
                     raise Exception('Makepkg failed')
                 if signed:
-	            sigs = glob(build_dir + '/' + package.name + '/*.pkg.tar.xz.sig')
-	            if len(sigs) > 0:
-	                for file in pkgs:
-	                    copy(file, repo_dir)
-	            else:
-	                raise Exception('Makepkg signing failed')
+                    sigs = glob(build_dir + '/' + package.name + '/*.pkg.tar.xz.sig')
+                    if len(sigs) > 0:
+                        for file in sigs:
+                            copy(file, repo_dir)
+                    else:
+                        raise Exception('Makepkg signing failed')
                 break
             except Exception as e:
                 print('Unexpected Error:' + str(e))
                 attempts += 1
                 if attempts < max_attempts:
                     print('Trying again...')
-                    rmtree('build/' + package.name, ignore_errors=True)
+                    rmtree(build_dir + '/' + package.name, ignore_errors=True)
                 else:
                     failed.append(package.name)
     with cd(repo_dir):
         if signed:
-            call('repo-add --sign apricity-core.db.tar.gz *.pkg.tar.xz', shell=True)
+            call('repo-add --sign ' + repo_name + '.db.tar.gz *.pkg.tar.xz', shell=True)
         else:
-            call('repo-add apricity-core.db.tar.gz *.pkg.tar.xz', shell=True)
+            call('repo-add ' + repo_name + '.db.tar.gz *.pkg.tar.xz', shell=True)
     return failed
+
+
+def build_core_nonsigned(packages, install_makedeps):
+    return build_repo(packages, install_makedeps=install_makedeps, signed=False, dest_dir='apricity-core', repo_name='apricity-core', build_dir='build', repo_dir='core')
+
+
+def build_core_signed(packages, install_makedeps):
+    return build_repo(packages, install_makedeps=install_makedeps, signed=True, dest_dir='apricity-core-signed', repo_name='apricity-core', build_dir='build-signed', repo_dir='core-signed')
+
+
+def build_core_dev(packages, install_makedeps):
+    return build_repo(packages, install_makedeps=install_makedeps, signed=True, dest_dir='apricity-core-dev', repo_name='apricity-core-dev', build_dir='build-dev', repo_dir='core-dev', dev=True)
 
 
 def get_args():
@@ -159,7 +165,13 @@ def get_args():
                         help='increase verbosity',
                         action='store_true')
     parser.add_argument('-s', '--signed',
-                        help='sign packages',
+                        help='build apricity-core-signed',
+                        action='store_true')
+    parser.add_argument('-n', '--nonsigned',
+                        help='build apricity-core',
+                        action='store_true')
+    parser.add_argument('-d', '--dev',
+                        help='build apricity-dev',
                         action='store_true')
     parser.add_argument('-a', '--apricity_spot_fix',
                         default='',
@@ -175,14 +187,21 @@ def main():
     args = get_args()
     print('Verbosity: ' + str(args.verbose))
     with cd('~/Apricity-OS/apricity-repo'):
-        clean()
         packages = get_packages(yaourt_spot_fix=args.aur_spot_fix,
                                 apricity_spot_fix=args.apricity_spot_fix)
-        failed_packages = build_core(packages,
-                                     install_makedeps=args.install_makedeps,
-                                     verbose=args.verbose,
-                                     signed=args.signed)
-        sync_core(args.signed)
+        failed_packages = []
+        if args.nonsigned:
+            failed_packages += build_core_nonsigned(packages, args.install_makedeps)
+        if args.signed:
+            failed_packages += build_core_signed(packages, args.install_makedeps)
+        if args.dev:
+            failed_packages += build_core_dev(packages, args.install_makedeps)
+        if args.nonsigned:
+            sync_core_nonsigned()
+        if args.signed:
+            sync_core_signed()
+        if args.dev:
+            sync_core_dev()
         if len(failed_packages) > 0:
             print('Failed packages:')
             for package_name in failed_packages:
