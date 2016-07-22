@@ -1,3 +1,4 @@
+su repo
 package_name=google-talkplugin
 repo_name=apricity-core
 repo_endpoint=apricity-core-signed
@@ -31,3 +32,4 @@ scp ${package_name}.log server@192.241.147.116:/mnt/static/public_html/${repo_en
 
 cd ../..
 rm -rf build
+exit
