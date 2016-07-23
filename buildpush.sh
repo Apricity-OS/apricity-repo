@@ -17,7 +17,7 @@ mkdir -p build
 cd build
 yaourt -G ${package_name}
 cd ${package_name}
-makepkg -s --sign --clean 2>&1 | tee ${package_name}.log
+makepkg -s --sign --clean --noconfirm 2>&1 | tee ${package_name}.log
 
 wget 192.241.147.116/${repo_endpoint}/${repo_name}.db
 wget 192.241.147.116/${repo_endpoint}/${repo_name}.db.tar.gz
