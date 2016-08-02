@@ -3,12 +3,11 @@ repo_name=apricity-core
 repo_endpoint=apricity-core-signed
 dev=""
 
-while getopts 'P:R:E:dh' arg; do
+while getopts 'P:sdh' arg; do
     case "${arg}" in
         P) package_name="${OPTARG}" ;;
-        R) repo_name="${OPTARG}" ;;
-        E) repo_endpoint="${OPTARG}" ;;
-        d) dev="-dev" ;;
+        s) dev="" repo_name="apricity-core" repo_endpoint="apricity-core-signed" ;;
+        d) dev="-dev" repo_name="apricity-core-dev" repo_endpoint="apricity-core-dev" ;;
         *)
            echo "Invalid argument '${arg}'" ;;
     esac
