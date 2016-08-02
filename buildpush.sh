@@ -17,6 +17,7 @@ mkdir -p build
 cd build
 yaourt -G ${package_name}
 cd ${package_name}
+sudo pacman -Syy
 makepkg -sr --sign --clean --needed --noconfirm 2>&1 | tee ${package_name}.log
 
 wget static.apricityos.com/${repo_endpoint}/${repo_name}.db
