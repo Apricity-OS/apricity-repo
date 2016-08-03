@@ -27,7 +27,9 @@ wget static.apricityos.com/${repo_endpoint}/${repo_name}.files.tar.gz
 
 repo-add --sign ${repo_name}.db.tar.gz ${package_name}*.pkg.tar.xz
 
-scp ${repo_name}.db* ${repo_name}.files* ${package_name}*.pkg.tar.xz server@static.apricityos.com:/mnt/static/public_html/${repo_endpoint}/
+scp ${repo_name}.db* server@static.apricityos.com:/mnt/static/public_html/${repo_endpoint}/
+scp ${repo_name}.files* server@static.apricityos.com:/mnt/static/public_html/${repo_endpoint}/
+scp ${package_name}*.pkg.tar.xz server@static.apricityos.com:/mnt/static/public_html/${repo_endpoint}/
 scp ${package_name}.log server@static.apricityos.com:/mnt/static/public_html/${repo_endpoint}/
 
 cd ../..
