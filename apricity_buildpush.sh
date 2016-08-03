@@ -32,6 +32,7 @@ repo-add --sign ${repo_name}.db.tar.gz *.pkg.tar.xz
 scp ${repo_name}.db* server@static.apricityos.com:/mnt/static/public_html/${repo_endpoint}/
 scp ${repo_name}.files* server@static.apricityos.com:/mnt/static/public_html/${repo_endpoint}/
 scp ./*.pkg.tar.xz server@static.apricityos.com:/mnt/static/public_html/${repo_endpoint}/
+scp ./*.pkg.tar.xz.sig server@static.apricityos.com:/mnt/static/public_html/${repo_endpoint}/
 scp ${package_name}.log server@static.apricityos.com:/mnt/static/public_html/${repo_endpoint}/
 
 cd ../../..
