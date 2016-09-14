@@ -5,8 +5,8 @@ repo_endpoint=apricity-core-signed
 while getopts 'P:sdh' arg; do
     case "${arg}" in
         P) package_name="${OPTARG}" ;;
-        s) repo_name="apricity-core" repo_endpoint="apricity-core-signed" ;;
-        d) repo_name="apricity-core-dev" repo_endpoint="apricity-core-dev" ;;
+        s) repo_name="apricity-core" repo_endpoint="apricity-core-signed-i686" ;;
+        d) repo_name="apricity-core-dev" repo_endpoint="apricity-core-dev-i686" ;;
         *)
            echo "Invalid argument '${arg}'" ;;
     esac
