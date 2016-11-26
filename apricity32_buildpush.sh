@@ -2,12 +2,14 @@ package_name=apricityassets
 repo_name=apricity-core
 repo_endpoint=apricity-core-signed
 dev=""
+arch=""
 
 while getopts 'P:sdh' arg; do
     case "${arg}" in
         P) package_name="${OPTARG}" ;;
         s) dev="" repo_name="apricity-core" repo_endpoint="apricity-core-signed-i686" ;;
         d) dev="-dev" repo_name="apricity-core-dev" repo_endpoint="apricity-core-dev-i686" ;;
+	i) arch="32" ;;
         *)
            echo "Invalid argument '${arg}'" ;;
     esac
@@ -23,7 +25,7 @@ mkdir -p build
 cd build
 git clone https://github.com/Apricity-OS/apricity-packages${dev}
 cd apricity-packages${dev}
-cd ${package_name}32
+cd ${package_name}${arch}
 sudo pacman -Syy
 makechrootpkg -cr $CHROOT -- -s --clean --needed --noconfirm 2>&1 | tee ${package_name}.log
 
