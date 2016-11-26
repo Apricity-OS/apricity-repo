@@ -16,7 +16,7 @@ done
 mkdir -p ~/chroot32
 CHROOT=$HOME/chroot32
 mkarchroot -C pacman_i686.conf -M makepkg_i686.conf $CHROOT/root base-devel
-arch-nspawn $CHROOT/root pacman -Syu
+arch-nspawn $CHROOT/root pacman -Syu --noconfirm
 
 rm -rf build
 mkdir -p build
